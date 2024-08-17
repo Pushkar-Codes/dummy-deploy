@@ -3,6 +3,7 @@ import { useState } from "react";
 import Navbar from "./navbar";
 import Image from "next/image";
 import ServiceCard from "./service-cards";
+import Footer from "./footer";
 
 export default function Heropage() {
   const [isOpen, setIsOpen] = useState(false);
@@ -197,6 +198,7 @@ export default function Heropage() {
           />
         </div>
       </div>
+      <Footer />
     </>
   );
 }

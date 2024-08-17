@@ -1,15 +1,23 @@
-import PropTypes from "prop-types";
+import React from "react";
 
-export default function ServiceCard({
+// Define the props interface
+interface ServiceCardProps {
+  title: string;
+  descriptions: string[];
+  linkText: string;
+  linkUrl: string;
+}
+
+const ServiceCard: React.FC<ServiceCardProps> = ({
   title,
   descriptions,
   linkText,
   linkUrl,
-}) {
+}) => {
   return (
     <div className="">
       <div
-        className="max-w-[90%] mx-auto bg-[#212020] lg:w-[400px]  rounded-lg overflow-hidden"
+        className="max-w-[90%] mx-auto bg-[#212020] lg:w-[400px] rounded-lg overflow-hidden"
         style={{ boxShadow: "0 20px 30px rgba(0, 0, 0, 0.25)" }}
       >
         <div className="p-6">
@@ -42,12 +50,6 @@ export default function ServiceCard({
       </div>
     </div>
   );
-}
-
-// Define prop types for the component
-ServiceCard.propTypes = {
-  title: PropTypes.string.isRequired,
-  descriptions: PropTypes.arrayOf(PropTypes.string).isRequired,
-  linkText: PropTypes.string.isRequired,
-  linkUrl: PropTypes.string.isRequired,
 };
+
+export default ServiceCard;

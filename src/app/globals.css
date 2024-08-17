@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.button1 {
+  color: #212020;
+  background-color: #fff;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 8px;
+  font-weight: 400;
+  display: flex;
+}
+
+.button2 {
+  color: #212020;
+  background-color: #facf0e;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 8px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center; /* Center the text horizontally */
+  align-items: center; /* Center the text vertically */
+}
+
+@media (max-width: 768px) {
+  .button2 {
+    color: #212020;
+    background-color: #facf0e;
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    
+  }
+}

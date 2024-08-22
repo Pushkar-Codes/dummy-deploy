@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 export default function Footer() {
   return (
-    <div className="bg-[#212020] w-full h-auto px-24 py-14 flex justify-between items-center">
+    <div className="bg-[#212020] w-full h-auto lg:px-24 lg:py-14 flex lg:flex-row justify-between items-center px-2 py-8 flex-col">
       {/* <div>
         <Image
           src="/logos/logo-png.png"
@@ -13,7 +13,7 @@ export default function Footer() {
         />
       </div> */}
 
-      <div className="flex items-center">
+      <div className="flex items-center mb-6">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -32,7 +32,7 @@ export default function Footer() {
         </p>
       </div>
 
-      <div className="flex text-white justify-between ">
+      <div className="flex text-white justify-between mb-6">
         <Link href="#" className="">
           <svg
             xmlns="http://www.w3.org/2000/svg"

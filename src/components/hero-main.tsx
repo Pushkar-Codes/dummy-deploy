@@ -140,7 +140,7 @@ export default function Heropage() {
 
       {/* Hero page 4 starts from here... */}
 
-      <div className="bg-cover bg-center min-h-auto bg-[url('/bg-images/service-bg.png')]">
+      <div className="bg-cover bg-center mb-6 min-h-screen bg-[url('/bg-images/service-bg.png')]">
         <h2 className="text-[#141213] text-4xl px-6 py-12 lg:text-7xl font-semibold lg:px-24 lg:py-24">
           Our Services
         </h2>
@@ -196,6 +196,31 @@ export default function Heropage() {
             linkText=""
             linkUrl=""
           />
+        </div>
+      </div>
+
+      {/* Hero page 5 starts from here... */}
+
+      <div className="w-full min-h-screen bg-white">
+        <div className="lg:px-24 lg:py-24">
+          <h2 className="text-[#141213] text-4xl px-2 py-12 lg:text-7xl font-semibold">
+            Why Us ?
+          </h2>
+          <hr className="w-[200px] ml-2 lg:w-[350px] border border-[#141213]" />
+          <p className="text-[#141213] text-xl px-2 py-12 text-justify lg:text-3xl ">
+            S N Power & Infra has ability to manage complex projects, provide
+            cost effective and environment friendly solutions to the clients by
+            using the young dynamic team, innovative ideas, case studies, expert
+            advices, research papers and Indian & International specifications
+            and technology.
+            <br />
+            <br />S N Power & Infra excels in delivering sustainable energy
+            solutions, combining technical expertise with innovative
+            methodologies. Our team is dedicated to achieving excellence in
+            every project by leveraging advanced technologies, strategic
+            planning, and a deep understanding of both Indian and global
+            standards.
+          </p>
         </div>
       </div>
       <Footer />

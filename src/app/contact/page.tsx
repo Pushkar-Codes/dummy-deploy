@@ -39,7 +39,7 @@ export default function Contact() {
                   width="100%" // Makes the iframe responsive to the width of the parent container
                   height="200" // Adjust height as needed
                   style={{ border: 0 }}
-                  allowFullScreen // No need for quotes or value here
+                  allowFullScreen={true} // No need for quotes or value here
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>

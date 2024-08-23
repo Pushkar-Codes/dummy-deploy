@@ -1,6 +1,6 @@
 "use client";
 
-import { Outfit } from "@next/font/google";
+import { Outfit } from "next/font/google";
 import "./globals.css";
 import Heropage from "@/components/hero-main";
 

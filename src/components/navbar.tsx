@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useState, ReactNode } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,20 +10,103 @@ export default function Navbar() {
     setIsOpen(!isOpen);
   };
 
+  const DURATION = 0.25;
+  const STAGGER = 0.025;
+
+  interface FlipLinkProps {
+    children: ReactNode;
+    href: string;
+  }
+
+  const FlipLink = ({ children, href }: FlipLinkProps) => {
+    return (
+      <Link href={href} passHref>
+        <motion.div
+          initial="initial"
+          whileHover="hovered"
+          className="relative block overflow-hidden text-xl font-medium uppercase"
+          style={{
+            lineHeight: 1.2,
+            display: "inline-block", // Ensures links are displayed inline
+            marginRight: "2rem", // Add spacing between links
+          }}
+        >
+          <div className="relative">
+            {children
+              ?.toString()
+              .split("")
+              .map((l, i) => (
+                <motion.span
+                  variants={{
+                    initial: {
+                      y: 0,
+                    },
+                    hovered: {
+                      y: "-100%",
+                    },
+                  }}
+                  transition={{
+                    duration: DURATION,
+                    ease: "easeInOut",
+                    delay: STAGGER * i,
+                  }}
+                  className="inline-block"
+                  key={i}
+                >
+                  {l}
+                </motion.span>
+              ))}
+          </div>
+          <div className="absolute inset-0">
+            {children
+              ?.toString()
+              .split("")
+              .map((l, i) => (
+                <motion.span
+                  variants={{
+                    initial: {
+                      y: "100%",
+                    },
+                    hovered: {
+                      y: 0,
+                      color: "#facf0e",
+                    },
+                  }}
+                  transition={{
+                    duration: DURATION,
+                    ease: "easeInOut",
+                    delay: STAGGER * i,
+                  }}
+                  className="inline-block"
+                  key={i}
+                >
+                  {l}
+                </motion.span>
+              ))}
+          </div>
+        </motion.div>
+      </Link>
+    );
+  };
+
   return (
     <div>
       <div className="lg:px-16 lg:py-14 w-full h-20 flex items-center justify-between">
-        <Image
-          src="/logos/logo-png.png"
-          alt="SNPI Logo"
-          width={230}
-          height={50}
-        />
+        <Link href="/" passHref>
+          <Image
+            src="/logos/logo-png.png"
+            alt="SNPI Logo"
+            width={230}
+            height={50}
+            className="cursor-pointer" // Add cursor pointer to indicate it's clickable
+          />
+        </Link>
+
         <div className="hidden md:flex text-white">
-          <div className="mr-52 space-x-14 ">
-            <Link href="#">About</Link>
-            <Link href="#">Other</Link>
-            <Link href="/contact">Contact</Link>
+          <div className="mr-52 space-x-14 flex items-center">
+            <FlipLink href="#">About</FlipLink>
+            <FlipLink href="#">Other</FlipLink>
+            <FlipLink href="/contact">Contact</FlipLink>
           </div>
 
           <button className="button1">

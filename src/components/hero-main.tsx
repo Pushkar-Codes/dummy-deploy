@@ -4,6 +4,7 @@ import Navbar from "./navbar";
 import Image from "next/image";
 import ServiceCard from "./service-cards";
 import Footer from "./footer";
+import { motion } from "framer-motion";
 
 export default function Heropage() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,34 +15,45 @@ export default function Heropage() {
 
   return (
     <>
-      <div className="bg-cover bg-center min-h-screen bg-[url('/bg-images/head-bg.png')] ">
-        <Navbar />
-        {/* Hero section starts from here ... */}
-        <div className="lg:px-40 lg:py-10 px-2">
-          <h1 className="text-white lg:text-8xl text-6xl leading-none mt-4">
-            Welcome to SN Power <br /> & Infra, where <br /> passion lies in
-            <br />
-            perfection.
-          </h1>
-        </div>
-        {/* Hero page 1 button */}
+      <motion.div
+        initial={{ opacity: 0, scale: 0.8, rotate: -10 }}
+        animate={{ opacity: 1, scale: 1, rotate: 0 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        className="bg-cover bg-center min-h-screen bg-[url('/bg-images/head-bg.png')]"
+      >
+        <motion.div
+          initial={{ y: -50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.5, duration: 0.8, ease: "easeOut" }}
+        >
+          <Navbar />
+          {/* Hero section starts from here ... */}
+          <div className="lg:px-40 lg:py-10 px-2">
+            <h1 className="text-white lg:text-8xl text-6xl leading-none mt-4">
+              Welcome to SN Power <br /> & Infra, where <br /> passion lies in
+              <br />
+              perfection.
+            </h1>
+          </div>
+          {/* Hero page 1 button */}
 
-        <div className=" lg:h-12 lg:px-40 lg:flex lg:space-x-8 h-auto mt-12 px-2 w-full">
-          <button className="button2">Work With Us</button>
-          <div className=" lg:flex space-x-6 items-center">
-            <Image
-              className="lg:flex hidden"
-              src="/snapshots/arrow.png"
-              alt="SNPI Logo"
-              width={150}
-              height={20}
-            />
-            <div className="text-white text-xl lg:m-0 mt-6">
-              <p>24x7 Availbale, reach out today</p>
+          <div className=" lg:h-12 lg:px-40 lg:flex lg:space-x-8 h-auto mt-12 px-2 w-full">
+            <button className="button2">Work With Us</button>
+            <div className=" lg:flex space-x-6 items-center">
+              <Image
+                className="lg:flex hidden"
+                src="/snapshots/arrow.png"
+                alt="SNPI Logo"
+                width={150}
+                height={20}
+              />
+              <div className="text-white text-xl lg:m-0 mt-6">
+                <p>24x7 Availbale, reach out today</p>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
 
       {/* Hero page 2 starts from here... */}
       <div className="w-full min-h-screen ">

@@ -12,6 +12,14 @@
   border-radius: 8px;
   font-weight: 400;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Hover effect for glowing */
+.button1:hover {
+  box-shadow: 0 0 20px rgba(250, 207, 14, 0.8);
 }
 
 .button2 {
@@ -36,6 +44,5 @@
     padding-right: 38px;
     padding-top: 8px;
     padding-bottom: 8px;
-    
   }
 }

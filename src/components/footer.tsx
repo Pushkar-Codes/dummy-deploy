@@ -33,7 +33,11 @@ export default function Footer() {
       </div>
 
       <div className="flex text-white justify-between mb-6">
-        <Link href="#" className="">
+        <Link
+          href="https://www.instagram.com/snpoweri?utm_source=qr&igsh=N3A5Zm04ZmU5NXAx"
+          target="_blank"
+          className=""
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -85,13 +89,13 @@ export default function Footer() {
       </div>
 
       <div className="flex text-white text-[14px]  ">
-        <Link href="#" className="mr-4">
+        <Link href="#" className="mr-4 hover:text-[#facf0e]">
           Career
         </Link>
-        <Link href="#" className="mr-4">
+        <Link href="#" className="mr-4 hover:text-[#facf0e]">
           Privacy Policy
         </Link>
-        <Link href="#" className="">
+        <Link href="#" className="hover:text-[#facf0e]">
           Terms & Conditons
         </Link>
       </div>

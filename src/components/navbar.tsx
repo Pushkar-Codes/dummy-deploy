@@ -1,3 +1,4 @@
+// components/Navbar.tsx
 import { useState, ReactNode } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -27,8 +28,8 @@ export default function Navbar() {
           className="relative block overflow-hidden text-xl font-medium uppercase"
           style={{
             lineHeight: 1.2,
-            display: "inline-block", // Ensures links are displayed inline
-            marginRight: "2rem", // Add spacing between links
+            display: "inline-block",
+            marginRight: "2rem",
           }}
         >
           <div className="relative">
@@ -90,7 +91,7 @@ export default function Navbar() {
   };
 
   return (
-    <div>
+    <div className="top-0 left-0 w-full z-50 bg-[#212020]  text-white">
       <div className="lg:px-16 lg:py-14 w-full h-20 flex items-center justify-between">
         <Link href="/" passHref>
           <Image
@@ -98,7 +99,7 @@ export default function Navbar() {
             alt="SNPI Logo"
             width={230}
             height={50}
-            className="cursor-pointer" // Add cursor pointer to indicate it's clickable
+            className="cursor-pointer"
           />
         </Link>
 

@@ -19,7 +19,7 @@
 
 /* Hover effect for glowing */
 .button1:hover {
-  box-shadow: 0 0 20px rgba(250, 207, 14, 0.8);
+  box-shadow: 0 0 20px #facf0ecc;
 }
 
 .button2 {

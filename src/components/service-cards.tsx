@@ -17,7 +17,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   return (
     <div className="">
       <div
-        className="max-w-[90%] mx-auto bg-[#212020] lg:w-[400px] rounded-lg overflow-hidden"
+        className="max-w-[100%] mx-auto bg-[#212020] lg:w-[400px] rounded overflow-hidden"
         style={{ boxShadow: "0 20px 30px rgba(0, 0, 0, 0.25)" }}
       >
         <div className="p-6">

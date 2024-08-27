@@ -157,7 +157,7 @@ export default function Heropage() {
         <h2 className="text-[#141213] text-4xl px-2 py-12 lg:text-7xl font-semibold lg:px-24 lg:py-24">
           Services we offer :
         </h2>
-        {/* <div className="lg:flex lg:px-24 lg:py-18">
+        <div className="lg:flex lg:px-24 lg:py-18">
           <ServiceCard
             title="Electrical"
             descriptions={[
@@ -209,134 +209,6 @@ export default function Heropage() {
             linkText=""
             linkUrl=""
           />
-        </div> */}
-        <div className="px-2 space-y-6">
-          {/* Electrical card */}
-          <div className="w-f h-28 border flex ">
-            <div className="w-[40%] h-full">
-              <Image
-                className="ml-auto h-full lg:w-full lg:ml-0 lg:max-h-screen"
-                src="/main-images/electric-small.png"
-                alt="services"
-                width={280}
-                height={20}
-              />
-            </div>
-            <div
-              className="bg-slate-100 w-full flex justify-between items-center px-5"
-              style={{ boxShadow: "0 8px 10px rgba(0, 0, 0, 0.25)" }}
-            >
-              <h2 className="text-xl text-[#141213]">Electrical</h2>
-              <div>
-                <Link href="/electrical">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="rgba(250,207,14,0.8)"
-                    height={50}
-                    width={30}
-                  >
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                    <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
-                  </svg>
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          {/* Civil card */}
-
-          <div className="w-f h-28 border flex ">
-            <div className="w-[40%] h-full">
-              <Image
-                className="ml-auto h-full lg:w-full lg:ml-0 lg:max-h-screen"
-                src="/main-images/civil-small.png"
-                alt="services"
-                width={280}
-                height={20}
-              />
-            </div>
-            <div
-              className="bg-slate-100 w-full flex justify-between items-center px-5"
-              style={{ boxShadow: "0 8px 10px rgba(0, 0, 0, 0.25)" }}
-            >
-              <h2 className="text-xl text-[#141213]">Civil</h2>
-              <div>
-                <Link href="/electrical">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="rgba(250,207,14,0.8)"
-                    height={50}
-                    width={30}
-                  >
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                    <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
-                  </svg>
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          {/* Rain water card */}
-
-          <div className="w-f h-28 border flex ">
-            <div className="w-[40%] h-full">
-              <Image
-                className="ml-auto h-full lg:w-full lg:ml-0 lg:max-h-screen"
-                src="/main-images/rain-small.png"
-                alt="services"
-                width={280}
-                height={20}
-              />
-            </div>
-            <div
-              className="bg-slate-100 w-full flex justify-between items-center px-5"
-              style={{ boxShadow: "0 8px 10px rgba(0, 0, 0, 0.25)" }}
-            >
-              <h2 className="text-xl text-[#141213]">Rain Water Harversting</h2>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="rgba(250,207,14,0.8)"
-                height={50}
-                width={30}
-              >
-                <path fill="none" d="M0 0h24v24H0z"></path>
-                <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
-              </svg>
-            </div>
-          </div>
-
-          {/* Technical report card */}
-
-          <div className="w-f h-28 border flex ">
-            <div className="w-[40%] h-full">
-              <Image
-                className="ml-auto h-full lg:w-full lg:ml-0 lg:max-h-screen"
-                src="/main-images/report-small.png"
-                alt="services"
-                width={280}
-                height={20}
-              />
-            </div>
-            <div
-              className="bg-slate-100 w-full flex justify-between items-center px-5"
-              style={{ boxShadow: "0 8px 10px rgba(0, 0, 0, 0.25)" }}
-            >
-              <h2 className="text-xl text-[#141213]">Technical Report</h2>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="rgba(250,207,14,0.8)"
-                height={50}
-                width={30}
-              >
-                <path fill="none" d="M0 0h24v24H0z"></path>
-                <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
-              </svg>
-            </div>
-          </div>
         </div>
       </div>
 

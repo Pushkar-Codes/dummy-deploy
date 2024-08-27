@@ -12,7 +12,7 @@ export default function Electrical() {
       <Navbar />
       {/* Page1 here... */}
       <div className="flex-grow relative">
-        <div className="relative w-full h-[500px] lg:h-[600px]">
+        <div className="relative w-full h-[600px] lg:h-[600px]">
           <Image
             src="/bg-images/electrical-service.jpg"
             alt="SNPI Logo"
@@ -22,7 +22,7 @@ export default function Electrical() {
         </div>
 
         <div
-          className="absolute px-2 flex w-[80%] flex-col"
+          className="absolute px-2 flex w-[100%] lg:w-[80%] flex-col mt-20 "
           style={{ top: "270px", left: "0" }}
         >
           <div className="relative">
@@ -31,7 +31,7 @@ export default function Electrical() {
             </p>
           </div>
           <div className="mt-32 lg:mt-40">
-            <p className="text-white lg:text-2xl lg:px-24">
+            <p className="text-white  lg:text-2xl lg:px-24">
               Our expertise spans residential, commercial, and industrial
               sectors, ensuring top-notch solutions for lighting, wiring, and
               electrical systems.

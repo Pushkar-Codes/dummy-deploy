@@ -14,7 +14,7 @@ export default function Electrical() {
       <div className="flex-grow relative">
         <div className="relative w-full h-[600px] lg:h-[600px]">
           <Image
-            src="/bg-images/elce.jpg"
+            src="/bg-images/civil-service.jpg"
             alt="SNPI Logo"
             layout="fill"
             objectFit="cover"

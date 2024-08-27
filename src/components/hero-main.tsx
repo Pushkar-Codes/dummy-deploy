@@ -17,8 +17,8 @@ export default function Heropage() {
   return (
     <>
       <motion.div
-        initial={{ opacity: 0, scale: 0.8, rotate: -10 }}
-        animate={{ opacity: 1, scale: 1, rotate: 0 }}
+        initial={{ opacity: 0, y: -50 }} // Starts from top
+        animate={{ opacity: 1, y: 0 }} // Moves to its final position
         transition={{ duration: 1, ease: "easeOut" }}
         className="bg-cover bg-center min-h-screen bg-[url('/bg-images/head-bg.png')]"
       >
@@ -37,10 +37,9 @@ export default function Heropage() {
             </h1>
           </div>
           {/* Hero page 1 button */}
-
-          <div className=" lg:h-12 lg:px-40 lg:flex lg:space-x-8 h-auto mt-12 px-2 w-full">
+          <div className="lg:h-12 lg:px-40 lg:flex lg:space-x-8 h-auto mt-12 px-2 w-full">
             <button className="button2">Work With Us</button>
-            <div className=" lg:flex space-x-6 items-center">
+            <div className="lg:flex space-x-6 items-center">
               <Image
                 className="lg:flex hidden"
                 src="/snapshots/arrow.png"
@@ -49,7 +48,7 @@ export default function Heropage() {
                 height={20}
               />
               <div className="text-white text-xl lg:m-0 mt-6">
-                <p>24x7 Availbale, reach out today</p>
+                <p>24x7 Available, reach out today</p>
               </div>
             </div>
           </div>
@@ -57,24 +56,33 @@ export default function Heropage() {
       </motion.div>
 
       {/* Hero page 2 starts from here... */}
-      <div className="w-full min-h-screen ">
+      <div className="w-full min-h-screen">
         <div className="min-w-full h-auto lg:h-screen">
           <div className="flex">
             <div className="px-8 py-12 w-[50%] lg:px-24 lg:py-24">
-              <h2 className="text-[#141213] text-xs font-semibold lg:text-4xl">
+              <div className="text-[#141213] text-xs font-semibold lg:text-4xl">
                 S N Power & Infra was incorporated in 2023. S N Power & Infra is
                 a proprietorship consultancy firm. We provide consultancy
                 services in Power Distribution, Civil & Other Sectors.
-              </h2>
-              <p className="text-xs mt-5 lg:text-2xl lg:py-8">
+              </div>
+              <motion.p
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
+                className="text-xs mt-5 lg:text-2xl lg:py-8"
+              >
                 We pride ourselves on our ability to provide tailored solutions
                 that meet the unique needs of each client.
-              </p>
-
-              <p className="text-xs mt-5 lg:text-2xl">
+              </motion.p>
+              <motion.p
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
+                className="text-xs mt-5 lg:text-2xl"
+              >
                 S N Power & Infra has quickly established itself as a trusted
                 name in the industry.
-              </p>
+              </motion.p>
             </div>
 
             <div className="w-[50%] flex">
@@ -98,26 +106,34 @@ export default function Heropage() {
                 src="/main-images/civil1.jpg"
                 alt="SNPI Logo"
                 width={1280}
-                height={1920} // Set to the original height of your image
-                // Sets the quality to maximum
+                height={1920}
               />
             </div>
             <div className="px-8 py-12 w-[50%] lg:px-24 lg:py-24">
-              <h2 className="text-[#141213] text-xs font-semibold lg:text-4xl">
+              <div className="text-[#141213] text-xs font-semibold lg:text-4xl">
                 S N Power & Infra works together as a team to achieve
                 extraordinary results. Working together seamlessly to tackle
                 complex challenges.
-              </h2>
-              <p className="text-xs mt-5 lg:text-2xl lg:py-8">
+              </div>
+              <motion.p
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
+                className="text-xs mt-5 lg:text-2xl lg:py-8"
+              >
                 By fostering an environment of collaboration and creativity, we
                 encourage innovative solutions and continuous improvement.
-              </p>
-
-              <p className="text-xs mt-5 lg:text-2xl">
+              </motion.p>
+              <motion.p
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
+                className="text-xs mt-5 lg:text-2xl"
+              >
                 This synergy allows us to innovate and deliver solutions that
                 surpass what any single individual could achieve, ensuring that
                 our clients receive the best possible outcomes.
-              </p>
+              </motion.p>
             </div>
           </div>
         </div>
@@ -130,7 +146,12 @@ export default function Heropage() {
             Our Vision
           </h2>
           <hr className="w-[200px] ml-2 lg:w-[350px]" />
-          <p className="text-white text-xl px-2 py-12 text-justify lg:text-3xl ">
+          <motion.p
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
+            className="text-white text-xl px-2 py-12 text-justify lg:text-3xl "
+          >
             At S. N. Power & Infra, our vision is to harness the power of
             collaboration to achieve results that surpass individual
             capabilities. By working as a unified team, we strive to push the
@@ -138,8 +159,13 @@ export default function Heropage() {
             clients. Our commitment to teamwork enables us to tackle challenges
             with creativity and precision, setting new industry standards for
             excellence.
-            <br />
-            <br />
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
+            className="text-white text-xl px-2 py-12 text-justify lg:text-3xl "
+          >
             Our goal is to provide the best possible solutions to our clients in
             the simplest way. We focus on understanding client needs and
             delivering tailored, efficient solutions that are easy to implement.
@@ -147,7 +173,7 @@ export default function Heropage() {
             partnerships, ensuring that every project is executed with care and
             precision. Our vision is to be a trusted leader in our field,
             consistently exceeding client expectations.
-          </p>
+          </motion.p>
         </div>
       </div>
 
@@ -161,6 +187,9 @@ export default function Heropage() {
         <div className="px-2 space-y-6">
           {/* Electrical card */}
           <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
             className="w-full h-28 border flex lg:px-24 lg:h-48"
             whileHover={{
               scale: 1.05,
@@ -200,6 +229,9 @@ export default function Heropage() {
 
           {/* Civil card */}
           <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
             className="w-full h-28 border flex lg:px-24 lg:h-48"
             whileHover={{
               scale: 1.05,
@@ -239,6 +271,9 @@ export default function Heropage() {
 
           {/* Rain water card */}
           <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
             className="w-full h-28 border flex lg:px-24 lg:h-48"
             whileHover={{
               scale: 1.05,
@@ -278,6 +313,9 @@ export default function Heropage() {
 
           {/* Technical report card */}
           <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
             className="w-full h-28 border flex lg:px-24 lg:h-48"
             whileHover={{
               scale: 1.05,
@@ -325,20 +363,33 @@ export default function Heropage() {
             Why Us ?
           </h2>
           <hr className="w-[200px] ml-2 lg:w-[350px] border border-[#141213]" />
-          <p className="text-[#141213] text-xl px-2 py-12 text-justify lg:text-3xl ">
-            S N Power & Infra has ability to manage complex projects, provide
-            cost effective and environment friendly solutions to the clients by
-            using the young dynamic team, innovative ideas, case studies, expert
-            advices, research papers and Indian & International specifications
-            and technology.
+          <div className="text-[#141213] text-xl px-2 py-12 text-justify lg:text-3xl ">
+            <motion.p
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
+            >
+              S N Power & Infra has ability to manage complex projects, provide
+              cost effective and environment friendly solutions to the clients
+              by using the young dynamic team, innovative ideas, case studies,
+              expert advices, research papers and Indian & International
+              specifications and technology.
+            </motion.p>
             <br />
-            <br />S N Power & Infra excels in delivering sustainable energy
-            solutions, combining technical expertise with innovative
-            methodologies. Our team is dedicated to achieving excellence in
-            every project by leveraging advanced technologies, strategic
-            planning, and a deep understanding of both Indian and global
-            standards.
-          </p>
+            <br />
+            <motion.p
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
+            >
+              S N Power & Infra excels in delivering sustainable energy
+              solutions, combining technical expertise with innovative
+              methodologies. Our team is dedicated to achieving excellence in
+              every project by leveraging advanced technologies, strategic
+              planning, and a deep understanding of both Indian and global
+              standards.
+            </motion.p>
+          </div>
         </div>
       </div>
 

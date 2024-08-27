@@ -2,6 +2,7 @@
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import ServiceCard from "@/components/service-cards";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -11,20 +12,26 @@ export default function Electrical() {
       <Navbar />
       {/* Page1 here... */}
       <div className="flex-grow relative">
-        <div className="relative w-full h-[500px]">
+        <div className="relative w-full h-[500px] lg:h-[600px]">
           <Image
             src="/bg-images/electrical-service.jpg"
             alt="SNPI Logo"
             layout="fill"
             objectFit="cover"
           />
-          <div className="absolute  px-2 " style={{ top: "290px", left: "0" }}>
-            <p className="text-white text-2xl font-semibold">
+        </div>
+
+        <div
+          className="absolute px-2 flex w-[80%] flex-col"
+          style={{ top: "270px", left: "0" }}
+        >
+          <div className="relative">
+            <p className="absolute text-white text-4xl font-semibold lg:text-7xl lg:top-[-20px] lg:px-24">
               Electrical services we offer at SN Power & Infra
             </p>
           </div>
-          <div className="absolute px-2 " style={{ top: "370px", left: "0" }}>
-            <p className="text-white">
+          <div className="mt-32 lg:mt-40">
+            <p className="text-white lg:text-2xl lg:px-24">
               Our expertise spans residential, commercial, and industrial
               sectors, ensuring top-notch solutions for lighting, wiring, and
               electrical systems.
@@ -34,30 +41,7 @@ export default function Electrical() {
 
         {/* Page 2 here... */}
 
-        {/* Each item starts here */}
-        {/* <div className="flex w-full px-2 my-4">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="rgba(250,207,14,0.8)"
-              width={24}
-              height={24}
-              className="flex-shrink-0 mr-3"
-            >
-              <path fill="none" d="M0 0h24v24H0z"></path>
-              <path d="M17 2V4H20.0066C20.5552 4 21 4.44495 21 4.9934V21.0066C21 21.5552 20.5551 22 20.0066 22H3.9934C3.44476 22 3 21.5551 3 21.0066V4.9934C3 4.44476 3.44495 4 3.9934 4H7V2H17ZM7 6H5V20H19V6H17V8H7V6ZM9 16V18H7V16H9ZM9 13V15H7V13H9ZM9 10V12H7V10H9ZM15 4H9V6H15V4Z"></path>
-            </svg>
-            <div className="text-[#141213]">
-              <h2 className="font-semibold inline">Field Survey:</h2>{" "}
-              <p className="">
-                Conducting on-site assessments to gather essential data for
-                project planning and execution.
-              </p>
-            </div>
-          </div> */}
-        {/* Repeat similar blocks for each item */}
-
-        <div className="py-10 bg-white px-2 text-[#141213]">
+        <div className="py-10 bg-white px-2 text-[#141213] text-justify lg:text-2xl lg:flex lg:justify-center lg:items-center lg:px-24 lg:py-24">
           <p>
             The electrical services offered at SN Power & Infra are tailored to
             meet diverse needs, from residential to industrial projects. Our
@@ -97,12 +81,18 @@ export default function Electrical() {
           </div>
         </div>
 
-        {/* Page 3 here... */}
-
-        <div className="px-2 space-y-6 py-10 bg-white  ">
-          {/* Civil card */}
-
-          <div className="w-f h-28 border flex ">
+        <div className="w-full h-auto bg-slate-200 space-y-6 py-12">
+          <h2 className="text-[#141213] text-4xl px-2 py-12 lg:text-4xl font-semibold lg:px-24 lg:py-8">
+            Other Services We Offer :
+          </h2>
+          {/* Page 3 here... */}
+          <motion.div
+            className="w-full h-28 border flex lg:px-24 lg:h-48"
+            whileHover={{
+              scale: 1.05,
+              boxShadow: "0 12px 15px rgba(0, 0, 0, 0.3)",
+            }}
+          >
             <div className="w-[40%] h-full">
               <Image
                 className="ml-auto h-full lg:w-full lg:ml-0 lg:max-h-screen"
@@ -116,9 +106,9 @@ export default function Electrical() {
               className="bg-slate-100 w-full flex justify-between items-center px-5"
               style={{ boxShadow: "0 8px 10px rgba(0, 0, 0, 0.25)" }}
             >
-              <h2 className="text-xl text-[#141213]">Civil</h2>
+              <h2 className="text-xl text-[#141213] lg:text-3xl">Civil</h2>
               <div>
-                <Link href="/electrical">
+                <Link className="arraow-hover" href="/civil">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -132,10 +122,16 @@ export default function Electrical() {
                 </Link>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Rain water card */}
-          <div className="w-f h-28 border flex ">
+          <motion.div
+            className="w-full h-28 border flex lg:px-24 lg:h-48"
+            whileHover={{
+              scale: 1.05,
+              boxShadow: "0 12px 15px rgba(0, 0, 0, 0.3)",
+            }}
+          >
             <div className="w-[40%] h-full">
               <Image
                 className="ml-auto h-full lg:w-full lg:ml-0 lg:max-h-screen"
@@ -149,23 +145,32 @@ export default function Electrical() {
               className="bg-slate-100 w-full flex justify-between items-center px-5"
               style={{ boxShadow: "0 8px 10px rgba(0, 0, 0, 0.25)" }}
             >
-              <h2 className="text-xl text-[#141213]">Rain Water Harversting</h2>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="rgba(250,207,14,0.8)"
-                height={50}
-                width={30}
-              >
-                <path fill="none" d="M0 0h24v24H0z"></path>
-                <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
-              </svg>
+              <h2 className="text-xl text-[#141213] lg:text-3xl">
+                Rain Water Harvesting
+              </h2>
+              <Link className="arraow-hover" href="/civil">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="rgba(250,207,14,0.8)"
+                  height={50}
+                  width={30}
+                >
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                </svg>
+              </Link>
             </div>
-          </div>
+          </motion.div>
 
           {/* Technical report card */}
-
-          <div className="w-f h-28 border flex ">
+          <motion.div
+            className="w-full h-28 border flex lg:px-24 lg:h-48"
+            whileHover={{
+              scale: 1.05,
+              boxShadow: "0 12px 15px rgba(0, 0, 0, 0.3)",
+            }}
+          >
             <div className="w-[40%] h-full">
               <Image
                 className="ml-auto h-full lg:w-full lg:ml-0 lg:max-h-screen"
@@ -179,19 +184,23 @@ export default function Electrical() {
               className="bg-slate-100 w-full flex justify-between items-center px-5"
               style={{ boxShadow: "0 8px 10px rgba(0, 0, 0, 0.25)" }}
             >
-              <h2 className="text-xl text-[#141213]">Technical Report</h2>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="rgba(250,207,14,0.8)"
-                height={50}
-                width={30}
-              >
-                <path fill="none" d="M0 0h24v24H0z"></path>
-                <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
-              </svg>
+              <h2 className="text-xl text-[#141213] lg:text-3xl">
+                Technical Report
+              </h2>
+              <Link className="arraow-hover" href="/civil">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="rgba(250,207,14,0.8)"
+                  height={50}
+                  width={30}
+                >
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                </svg>
+              </Link>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
 

@@ -153,66 +153,20 @@ export default function Heropage() {
 
       {/* Hero page 4 starts from here... */}
 
-      <div className="bg-slate-200 w-full min-h-screen ">
+      <div className="bg-slate-200 w-full min-h-auto pb-14">
         <h2 className="text-[#141213] text-4xl px-2 py-12 lg:text-7xl font-semibold lg:px-24 lg:py-24">
-          Services we offer :
+          Services We Offer :
         </h2>
-        {/* <div className="lg:flex lg:px-24 lg:py-18">
-          <ServiceCard
-            title="Electrical"
-            descriptions={[
-              "Survey & Mapping of Electrical Distribution Network",
-              "Bid Process Management",
-              "Preparation of AutoCAD Drawings",
-              "Execution Plan Development",
-              "Preparation of Monthly Progress Reports",
-              // "Supply Chain Management",
-              // "Examination of Technical Specifications",
-              // "Project Supervision and Management",
-            ]}
-            linkText="Explore more"
-            linkUrl="https://example.com"
-          />
 
-          <br />
-          <br />
-
-          <ServiceCard
-            title="Civil"
-            descriptions={[
-              "Architectural and Structural Drawings",
-              "Project Execution App",
-              "Infrastructure Mapping",
-              "Execution Plan",
-              "Progress Reporting",
-              // "Supply Chain Management",
-              // "Work Progress Review",
-              // "Project Closure",
-              // "Staff Management",
-              // "Project Supervision",
-            ]}
-            linkText="Explore more"
-            linkUrl="https://example.com"
-          />
-
-          <br />
-          <br />
-
-          <ServiceCard
-            title="Others"
-            descriptions={[
-              "Preparation of Disaster Management Plan",
-              "Rain Water Harvesting Management",
-              "Designing of interior & exterior lighting system",
-              "Digitization of office record",
-            ]}
-            linkText=""
-            linkUrl=""
-          />
-        </div> */}
         <div className="px-2 space-y-6">
           {/* Electrical card */}
-          <div className="w-f h-28 border flex ">
+          <motion.div
+            className="w-full h-28 border flex lg:px-24 lg:h-48"
+            whileHover={{
+              scale: 1.05,
+              boxShadow: "0 12px 15px rgba(0, 0, 0, 0.3)",
+            }}
+          >
             <div className="w-[40%] h-full">
               <Image
                 className="ml-auto h-full lg:w-full lg:ml-0 lg:max-h-screen"
@@ -226,9 +180,9 @@ export default function Heropage() {
               className="bg-slate-100 w-full flex justify-between items-center px-5"
               style={{ boxShadow: "0 8px 10px rgba(0, 0, 0, 0.25)" }}
             >
-              <h2 className="text-xl text-[#141213]">Electrical</h2>
+              <h2 className="text-xl text-[#141213] lg:text-3xl">Electrical</h2>
               <div>
-                <Link href="/electrical">
+                <Link className="arraow-hover" href="/electrical">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -242,11 +196,16 @@ export default function Heropage() {
                 </Link>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Civil card */}
-
-          <div className="w-f h-28 border flex ">
+          <motion.div
+            className="w-full h-28 border flex lg:px-24 lg:h-48"
+            whileHover={{
+              scale: 1.05,
+              boxShadow: "0 12px 15px rgba(0, 0, 0, 0.3)",
+            }}
+          >
             <div className="w-[40%] h-full">
               <Image
                 className="ml-auto h-full lg:w-full lg:ml-0 lg:max-h-screen"
@@ -260,9 +219,9 @@ export default function Heropage() {
               className="bg-slate-100 w-full flex justify-between items-center px-5"
               style={{ boxShadow: "0 8px 10px rgba(0, 0, 0, 0.25)" }}
             >
-              <h2 className="text-xl text-[#141213]">Civil</h2>
+              <h2 className="text-xl text-[#141213] lg:text-3xl">Civil</h2>
               <div>
-                <Link href="/electrical">
+                <Link className="arraow-hover" href="/civil">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -276,11 +235,16 @@ export default function Heropage() {
                 </Link>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Rain water card */}
-
-          <div className="w-f h-28 border flex ">
+          <motion.div
+            className="w-full h-28 border flex lg:px-24 lg:h-48"
+            whileHover={{
+              scale: 1.05,
+              boxShadow: "0 12px 15px rgba(0, 0, 0, 0.3)",
+            }}
+          >
             <div className="w-[40%] h-full">
               <Image
                 className="ml-auto h-full lg:w-full lg:ml-0 lg:max-h-screen"
@@ -294,23 +258,32 @@ export default function Heropage() {
               className="bg-slate-100 w-full flex justify-between items-center px-5"
               style={{ boxShadow: "0 8px 10px rgba(0, 0, 0, 0.25)" }}
             >
-              <h2 className="text-xl text-[#141213]">Rain Water Harversting</h2>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="rgba(250,207,14,0.8)"
-                height={50}
-                width={30}
-              >
-                <path fill="none" d="M0 0h24v24H0z"></path>
-                <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
-              </svg>
+              <h2 className="text-xl text-[#141213] lg:text-3xl">
+                Rain Water Harvesting
+              </h2>
+              <Link className="arraow-hover" href="/civil">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="rgba(250,207,14,0.8)"
+                  height={50}
+                  width={30}
+                >
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                </svg>
+              </Link>
             </div>
-          </div>
+          </motion.div>
 
           {/* Technical report card */}
-
-          <div className="w-f h-28 border flex ">
+          <motion.div
+            className="w-full h-28 border flex lg:px-24 lg:h-48"
+            whileHover={{
+              scale: 1.05,
+              boxShadow: "0 12px 15px rgba(0, 0, 0, 0.3)",
+            }}
+          >
             <div className="w-[40%] h-full">
               <Image
                 className="ml-auto h-full lg:w-full lg:ml-0 lg:max-h-screen"
@@ -324,19 +297,23 @@ export default function Heropage() {
               className="bg-slate-100 w-full flex justify-between items-center px-5"
               style={{ boxShadow: "0 8px 10px rgba(0, 0, 0, 0.25)" }}
             >
-              <h2 className="text-xl text-[#141213]">Technical Report</h2>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="rgba(250,207,14,0.8)"
-                height={50}
-                width={30}
-              >
-                <path fill="none" d="M0 0h24v24H0z"></path>
-                <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
-              </svg>
+              <h2 className="text-xl text-[#141213] lg:text-3xl">
+                Technical Report
+              </h2>
+              <Link className="arraow-hover" href="/civil">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="rgba(250,207,14,0.8)"
+                  height={50}
+                  width={30}
+                >
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                </svg>
+              </Link>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
 

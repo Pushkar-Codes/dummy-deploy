@@ -1,6 +1,7 @@
 "use client";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
+import "../globals.css";
 
 export default function Contact() {
   return (

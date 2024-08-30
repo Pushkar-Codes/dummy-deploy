@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Electrical() {
+export default function Civil() {
   return (
     <div className="flex flex-col min-h-screen bg-[#212020]">
       <Navbar />
@@ -27,14 +27,14 @@ export default function Electrical() {
         >
           <div className="relative">
             <p className="absolute text-white text-4xl font-semibold lg:text-7xl lg:top-[-20px] lg:px-24">
-              Electrical services we offer at SN Power & Infra
+              Civil Services We Offer At SN Power & Infra
             </p>
           </div>
           <div className="mt-32 lg:mt-40">
             <p className="text-white  lg:text-2xl lg:px-24">
               Our expertise spans residential, commercial, and industrial
-              sectors, ensuring top-notch solutions for lighting, wiring, and
-              electrical systems.
+              sectors, ensuring top-notch solutions in construction, structural
+              design, and infrastructure development.
             </p>
           </div>
         </div>
@@ -43,23 +43,23 @@ export default function Electrical() {
 
         <div className="py-10 bg-white px-2 text-[#141213] text-justify lg:text-2xl lg:flex lg:justify-center lg:items-center lg:px-24 lg:py-24">
           <p>
-            The electrical services offered at SN Power & Infra are tailored to
-            meet diverse needs, from residential to industrial projects. Our
-            expert team ensures top-notch quality, safety, and efficiency in
-            every task, utilizing advanced technology and best practices to
-            deliver reliable solutions that exceed expectations and stand the
-            test of time.
+            The civil services offered at SN Power & Infra are tailored to meet
+            diverse needs, from residential to industrial projects. Our expert
+            team ensures top-notch quality, safety, and efficiency in every
+            task, utilizing advanced technology and best practices to deliver
+            reliable solutions that exceed expectations and stand the test of
+            time.
             <br />
             <br />
             At SN Power & Infra, we prioritize customer satisfaction by offering
-            comprehensive electrical services that cover installation,
-            maintenance, and emergency support.
+            comprehensive civil services that cover construction, maintenance,
+            and project management.
             <br />
             <br />
             Our commitment to excellence, combined with our extensive industry
             experience, allows us to provide customized solutions that enhance
-            performance, reduce downtime, and ensure the longevity of electrical
-            systems across various sectors.​
+            performance, minimize delays, and ensure the longevity of
+            infrastructure across various sectors.
           </p>
 
           <div className="lg:flex lg:px-24 lg:py-18 mt-10">
@@ -67,11 +67,11 @@ export default function Electrical() {
               title="Services"
               descriptions={[
                 "Field Survey",
+                "Geotechnical Study",
                 "Design Engineering",
                 "Detailed Project Report (DPR)",
+                "Bid Process Management",
                 "Project Planning",
-                "Quality Assurance",
-                "Asset Mapping Project Closure",
                 "Supply Chain Management",
               ]}
               linkText={""}
@@ -96,7 +96,7 @@ export default function Electrical() {
             <div className="w-[40%] h-full">
               <Image
                 className="ml-auto h-full lg:w-full lg:ml-0 lg:max-h-screen"
-                src="/main-images/civil-small.png"
+                src="/main-images/electric-small.png"
                 alt="services"
                 width={280}
                 height={20}
@@ -106,9 +106,9 @@ export default function Electrical() {
               className="bg-slate-100 w-full flex justify-between items-center px-5"
               style={{ boxShadow: "0 8px 10px rgba(0, 0, 0, 0.25)" }}
             >
-              <h2 className="text-xl text-[#141213] lg:text-3xl">Civil</h2>
+              <h2 className="text-xl text-[#141213] lg:text-3xl">Electrical</h2>
               <div>
-                <Link className="arraow-hover" href="/civil">
+                <Link className="arraow-hover" href="/electrical">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -148,7 +148,11 @@ export default function Electrical() {
               <h2 className="text-xl text-[#141213] lg:text-3xl">
                 Rain Water Harvesting
               </h2>
-              <Link className="arraow-hover" href="/civil">
+              <Link
+                className="arraow-hover"
+                href="/rainwater
+              "
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -187,7 +191,7 @@ export default function Electrical() {
               <h2 className="text-xl text-[#141213] lg:text-3xl">
                 Technical Report
               </h2>
-              <Link className="arraow-hover" href="/civil">
+              <Link className="arraow-hover" href="/technicalreport">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"

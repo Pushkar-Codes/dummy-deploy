@@ -296,7 +296,7 @@ export default function Heropage() {
               <h2 className="text-xl text-[#141213] lg:text-3xl">
                 Rain Water Harvesting
               </h2>
-              <Link className="arraow-hover" href="/civil">
+              <Link className="arraow-hover" href="/rainwater">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -338,7 +338,7 @@ export default function Heropage() {
               <h2 className="text-xl text-[#141213] lg:text-3xl">
                 Technical Report
               </h2>
-              <Link className="arraow-hover" href="/civil">
+              <Link className="arraow-hover" href="/technicalreport">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"

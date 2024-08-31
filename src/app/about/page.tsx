@@ -11,8 +11,8 @@ export default function About() {
     <div className="flex flex-col min-h-screen bg-[#212020]">
       <Navbar />
       {/* Section 1 here... */}
-      <div className="w-full min-h-[50vh] bg-white">
-        <div className="w-full text-[#141213] text-xl font-semibold lg:text-4xl flex flex-col px-12 py-8">
+      <div className="w-full min-h-[50vh] bg-white lg:px-40 lg:py-10">
+        <div className="w-full text-[#141213] text-xl font-semibold lg:text-4xl flex flex-col px-6 py-12">
           <div className="flex space-x-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -47,8 +47,8 @@ export default function About() {
 
       {/* Section 2 here... */}
 
-      <div className="w-full min-h-[50vh] bg-white">
-        <div className="w-full text-[#141213] text-xl font-semibold lg:text-4xl flex flex-col px-12 py-8">
+      <div className="w-full min-h-[50vh] bg-white lg:px-40 lg:py-10">
+        <div className="w-full text-[#141213] text-xl font-semibold lg:text-4xl flex flex-col px-6 py-8">
           <div className="flex space-x-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -81,15 +81,15 @@ export default function About() {
       </div>
 
       {/* Section 3 here... */}
-      <div className="w-full min-h-auto border border-b-2 bg-slate-200 pb-10">
-        <div className="text-[#141213] text-xl font-semibold lg:text-4xl flex flex-col px-12 py-8">
+      <div className="w-full min-h-auto border border-b-2 bg-[#141213] pb-10 lg:flex lg:justify-center items-center lg:flex-col lg:px-40 lg:py-10">
+        <div className="text-white text-xl font-semibold lg:text-4xl flex flex-col px-12 py-8 items-center">
           <h2>Project Status</h2>
-          <hr className="w-[200px] mt-3 lg:w-[350px] border-0 h-[2px] bg-[#141213]" />
+          <hr className="w-[200px] mt-3 lg:w-[350px] border-0 h-[2px] bg-white" />
         </div>
-        <div className="flex flex-col space-y-6">
+        <div className="px-12 flex flex-col space-y-6 lg:items-center lg:flex-row lg:space-y-0 lg:space-x-8">
           <div
-            className="w-[80%] h-[100px] bg-white ml-12 rounded-md px-12 py-8"
-            style={{ boxShadow: "0 8px 10px rgba(0, 0, 0, 0.25)" }}
+            className="w-[100%] h-[100px] bg-white rounded-md px-12 py-8 lg:w-[100%]"
+            style={{ boxShadow: "0 2px 10px rgba(255, 255, 255, 0.5)" }}
           >
             <p className="text-xl">
               <span className="text-orange-600">11</span> Total Projects
@@ -97,8 +97,8 @@ export default function About() {
           </div>
 
           <div
-            className="w-[80%] h-[100px] bg-white ml-12 rounded-md px-12 py-8"
-            style={{ boxShadow: "0 8px 10px rgba(0, 0, 0, 0.25)" }}
+            className="w-[100%] h-[100px] bg-white rounded-md px-12 py-8 lg:w-[100%]"
+            style={{ boxShadow: "0 2px 10px rgba(255, 255, 255, 0.5)" }}
           >
             <p className="text-xl">
               <span className="text-orange-600">07</span> Completed
@@ -106,8 +106,8 @@ export default function About() {
           </div>
 
           <div
-            className="w-[80%] h-[100px] bg-white ml-12 rounded-md px-12 py-8"
-            style={{ boxShadow: "0 8px 10px rgba(0, 0, 0, 0.25)" }}
+            className="w-[100%] h-[100px] bg-white rounded-md px-12 py-8 lg:w-[100%]"
+            style={{ boxShadow: "0 2px 10px rgba(255, 255, 255, 0.5)" }}
           >
             <p className="text-xl">
               <span className="text-orange-600">04</span> On-going
@@ -117,8 +117,8 @@ export default function About() {
       </div>
 
       {/* Section 4 here... */}
-      <div className="w-full max-h-[100vh] bg-white">
-        <div className="text-[#141213] text-xl font-semibold lg:text-4xl flex flex-col px-12 py-8">
+      <div className="w-full max-h-[100vh] bg-white lg:flex lg:justify-center lg:items-center lg:px-40 lg:py-10 ">
+        <div className="text-[#141213] text-xl font-semibold lg:text-4xl flex flex-col px-12 py-8 items-center">
           <h2>Company Details</h2>
           <hr className="w-[200px] mt-3 lg:w-[350px] border-0 h-[2px] bg-[#141213]" />
           <div className="font-normal text-xs mt-6">
@@ -135,14 +135,12 @@ export default function About() {
               <span className="inline-block w-[10px] text-right">:</span> Mr. KN
               Mishra
             </p>
-
             <br />
             <p>
               <span className="inline-block w-[150px]">Firm Structure</span>
               <span className="inline-block w-[10px] text-right">:</span>{" "}
               Proprietorship
             </p>
-
             <br />
             <p className="mb-6">
               <span className="inline-block w-[150px]">Principal Business</span>
@@ -160,7 +158,7 @@ export default function About() {
                 Contact us
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-3 w-4 transition-colors duration-200 ease-in-out hover:fill-orange-600"
+                  className="h-3 w-4 transition-colors duration-200 ease-in-out hover:fill-orange-600 ml-2"
                   viewBox="0 -960 960 960"
                   width="24px"
                   fill="#facf0ecc"
@@ -174,8 +172,8 @@ export default function About() {
       </div>
 
       {/* Section 5 here... */}
-      <div className="w-full min-h-auto border border-b-2 bg-white pb-10">
-        <div className="w-full text-[#141213] text-xl font-semibold lg:text-4xl flex flex-col px-12 py-8">
+      <div className="w-full min-h-auto border border-b-2 bg-white pb-10 lg:px-40 lg:py-10">
+        <div className="w-full text-[#141213] text-xl font-semibold lg:text-4xl flex flex-col px-6 py-8">
           <div className="flex space-x-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -188,7 +186,7 @@ export default function About() {
             </svg>
             <h2> Meet the Founder</h2>
           </div>
-          <div className="font-normal text-justify mt-5 text-xs">
+          <div className="font-normal text-justify mt-5 text-xs lg:text-2xl">
             <p>
               Mr. KN Mishra had founded SN Power & Infra in the year of 2023.
               Before SN Power & Infra, Mr. Mishra had contributed his service

@@ -3,7 +3,7 @@ import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import "../globals.css";
 
-export default function TermsCondition() {
+export default function TermsAndCondition() {
   return (
     <div className="flex flex-col min-h-screen bg-[#212020]">
       <Navbar />

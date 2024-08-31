@@ -105,7 +105,7 @@ export default function Navbar() {
 
         <div className="hidden md:flex text-white">
           <div className="mr-52 space-x-14 flex items-center">
-            <FlipLink href="#">About</FlipLink>
+            <FlipLink href="/about">About</FlipLink>
             <FlipLink href="#">Other</FlipLink>
             <FlipLink href="/contact">Contact</FlipLink>
           </div>

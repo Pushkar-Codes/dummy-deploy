@@ -61,7 +61,7 @@ export default function Heropage() {
           <div className="flex">
             <div className="px-8 py-12 w-[50%] lg:px-24 lg:py-24">
               <div className="text-[#141213] text-xs font-semibold lg:text-4xl">
-                S N Power & Infra was incorporated in 2023. S N Power & Infra is
+                SN Power & Infra was incorporated in 2023. S N Power & Infra is
                 a proprietorship consultancy firm. We provide consultancy
                 services in Power Distribution, Civil & Other Sectors.
               </div>
@@ -80,7 +80,7 @@ export default function Heropage() {
                 transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
                 className="text-xs mt-5 lg:text-2xl"
               >
-                S N Power & Infra has quickly established itself as a trusted
+                SN Power & Infra has quickly established itself as a trusted
                 name in the industry.
               </motion.p>
             </div>

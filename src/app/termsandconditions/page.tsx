@@ -3,7 +3,7 @@ import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import "../globals.css";
 
-export default function TermsAndCondition() {
+export default function TermsCondition() {
   return (
     <div className="flex flex-col min-h-screen bg-[#212020]">
       <Navbar />
@@ -18,19 +18,19 @@ export default function TermsAndCondition() {
           <div className="mb-8">
             <h3 className="text-xl font-semibold mb-2">1. Introduction</h3>
             <p>
-              Welcome to SN Power & Infra. These Terms and Conditions outline
-              the rules and regulations for the use of SN Power & Infra's
-              website and services. By accessing or using our website and
-              services, you agree to comply with and be bound by these terms. If
-              you do not agree with any part of these terms, you should not use
-              our website or services.
+              Welcome to SN Power &amp; Infra. These Terms and Conditions
+              outline the rules and regulations for the use of SN Power &amp;
+              Infra&apos;s website and services. By accessing or using our
+              website and services, you agree to comply with and be bound by
+              these terms. If you do not agree with any part of these terms, you
+              should not use our website or services.
             </p>
           </div>
 
           <div className="mb-8">
             <h3 className="text-xl font-semibold mb-2">2. Services Provided</h3>
             <p>
-              SN Power & Infra provides consultancy services in the areas of
+              SN Power &amp; Infra provides consultancy services in the areas of
               Power Distribution, Civil Infrastructure, and Rain Water
               Harvesting. We strive to deliver the best solutions in an
               efficient and effective manner.
@@ -57,8 +57,9 @@ export default function TermsAndCondition() {
             <p>
               All content on our website, including but not limited to text,
               graphics, logos, images, and software, is the property of SN Power
-              & Infra or its content suppliers and is protected by intellectual
-              property laws. Unauthorized use of this content is prohibited.
+              &amp; Infra or its content suppliers and is protected by
+              intellectual property laws. Unauthorized use of this content is
+              prohibited.
             </p>
           </div>
 
@@ -67,11 +68,11 @@ export default function TermsAndCondition() {
               5. Limitation of Liability
             </h3>
             <p>
-              SN Power & Infra shall not be liable for any indirect, incidental,
-              special, or consequential damages, or any loss of data or profits,
-              arising out of or in connection with your use of our website or
-              services. Our liability is limited to the maximum extent permitted
-              by law.
+              SN Power &amp; Infra shall not be liable for any indirect,
+              incidental, special, or consequential damages, or any loss of data
+              or profits, arising out of or in connection with your use of our
+              website or services. Our liability is limited to the maximum
+              extent permitted by law.
             </p>
           </div>
 
@@ -89,9 +90,9 @@ export default function TermsAndCondition() {
             <h3 className="text-xl font-semibold mb-2">7. Governing Law</h3>
             <p>
               These Terms and Conditions shall be governed by and construed in
-              accordance with the laws of the jurisdiction in which SN Power &
-              Infra is established. Any disputes arising from these terms will
-              be resolved in the courts of that jurisdiction.
+              accordance with the laws of the jurisdiction in which SN Power
+              &amp; Infra is established. Any disputes arising from these terms
+              will be resolved in the courts of that jurisdiction.
             </p>
           </div>
 

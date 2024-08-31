@@ -92,10 +92,10 @@ export default function Footer() {
         <Link href="#" className="mr-4 hover:text-[#facf0e]">
           Career
         </Link>
-        <Link href="#" className="mr-4 hover:text-[#facf0e]">
+        <Link href="/privacypolicy" className="mr-4 hover:text-[#facf0e]">
           Privacy Policy
         </Link>
-        <Link href="#" className="hover:text-[#facf0e]">
+        <Link href="/termcond" className="hover:text-[#facf0e]">
           Terms & Conditons
         </Link>
       </div>

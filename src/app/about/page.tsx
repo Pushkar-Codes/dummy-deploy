@@ -20,7 +20,10 @@ export default function About() {
               width="24px"
               fill="#facf0ecc"
             >
-              <path d="M120-160v-520l160 120 200-280 200 160h160v520H120Zm200-120 160-220 280 218v-318H652L496-725 298-447l-98-73v144l120 96Z" />
+              <path
+                d="M120-160v-520l
+              160 120 200-280 200 160h160v520H120Zm200-120 160-220 280 218v-318H652L496-725 298-447l-98-73v144l120 96Z"
+              />
             </svg>
             <h2> About Us</h2>
           </div>
@@ -115,8 +118,8 @@ export default function About() {
         </div>
       </div>
 
-      {/* Section 4 here... */}
-      <div className="w-full max-h-[100vh] bg-white lg:flex lg:justify-center lg:items-center lg:px-40 lg:py-10 ">
+      {/* Section 4 here...  Company details are hidden here...*/}
+      {/* <div className="w-full max-h-[100vh] bg-white lg:flex lg:justify-center lg:items-center lg:px-40 lg:py-10 ">
         <div className="text-[#141213] text-xl font-semibold lg:text-4xl flex flex-col px-12 py-8 items-center">
           <h2>Company Details</h2>
           <hr className="w-[200px] mt-3 lg:w-[350px] border-0 h-[2px] bg-[#141213]" />
@@ -168,7 +171,7 @@ export default function About() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Section 5 here... */}
       <div className="w-full min-h-auto border border-b-2 bg-white pb-10 lg:px-40 lg:py-10">

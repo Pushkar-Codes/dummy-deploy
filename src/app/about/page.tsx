@@ -1,8 +1,6 @@
 "use client";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
-
-import Link from "next/link";
 import "../globals.css";
 
 export default function About() {
@@ -27,6 +25,7 @@ export default function About() {
             </svg>
             <h2> About Us</h2>
           </div>
+          <hr className="w-[200px] ml-2 lg:w-[350px] border border-[#141213] mt-5 mb-3" />
 
           <div>
             <p className="text-xs mt-5 lg:text-2xl lg:py-8 font-normal text-justify">
@@ -47,18 +46,20 @@ export default function About() {
         </div>
       </div>
 
-      <div className="text-white flex items-center justify-center py-6 shadow-[0_4px_20px_rgba(0,0,0,0.8)]">
-        <h1 className="font-semibold">Know More </h1>
+      <div className="bg-white py-6 flex items-center justify-center ">
+        <div className="px-16 lg:px-32 py-3 rounded-lg bg-[#212020] text-white flex items-center justify-center shadow-[0_4px_20px_rgba(0,0,0,0.8)]">
+          <h1 className="font-semibold">Know More </h1>
 
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          height="34px"
-          viewBox="0 -960 960 960"
-          width="44px"
-          fill="#facf0ecc"
-        >
-          <path d="M480-83 240-323l56-56 184 183 184-183 56 56L480-83Zm0-238L240-561l56-56 184 183 184-183 56 56-240 240Zm0-238L240-799l56-56 184 183 184-183 56 56-240 240Z" />
-        </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="34px"
+            viewBox="0 -960 960 960"
+            width="44px"
+            fill="#facf0ecc"
+          >
+            <path d="M480-83 240-323l56-56 184 183 184-183 56 56L480-83Zm0-238L240-561l56-56 184 183 184-183 56 56-240 240Zm0-238L240-799l56-56 184 183 184-183 56 56-240 240Z" />
+          </svg>
+        </div>
       </div>
 
       {/* Section 2 here... */}
@@ -77,6 +78,7 @@ export default function About() {
             </svg>
             <h2> Our Mission</h2>
           </div>
+          <hr className="w-[200px] ml-2 lg:w-[350px] border border-[#141213] mt-5 mb-3" />
 
           <div>
             <p className="text-xs mt-5 lg:text-2xl lg:py-8 font-normal text-justify">
@@ -97,7 +99,7 @@ export default function About() {
       </div>
 
       {/* Section 3 here... */}
-      <div className="w-full min-h-auto border border-b-2 bg-[#141213] pb-10 lg:flex lg:justify-center items-center lg:flex-col lg:px-40 lg:py-10">
+      <div className="w-full min-h-auto border border-b-2 bg-[#141213] shadow-[0_4px_20px_rgba(0,0,0,0.8)] pb-10 lg:flex lg:justify-center items-center lg:flex-col lg:px-40 lg:py-10">
         <div className="text-white text-xl font-semibold lg:text-4xl flex flex-col px-12 py-8 items-center">
           <h2>Project Status</h2>
           <hr className="w-[200px] mt-3 lg:w-[350px] border-0 h-[2px] bg-white" />
@@ -202,6 +204,7 @@ export default function About() {
             </svg>
             <h2> Meet the Founder</h2>
           </div>
+          <hr className="w-[200px] ml-2 lg:w-[350px] border border-[#141213] mt-5 mb-3" />
           <div className="font-normal text-justify mt-5 text-xs lg:text-2xl">
             <p>
               Mr. KN Mishra had founded SN Power & Infra in the year of 2023.

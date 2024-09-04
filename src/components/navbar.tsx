@@ -1,4 +1,3 @@
-// components/Navbar.tsx
 import { useState, ReactNode } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -144,7 +143,7 @@ export default function Navbar() {
             : "max-h-0 opacity-0 overflow-hidden"
         }`}
       >
-        <Link href="#" onClick={toggleMenu}>
+        <Link href="/about" onClick={toggleMenu}>
           About
         </Link>
         <Link href="#" onClick={toggleMenu}>

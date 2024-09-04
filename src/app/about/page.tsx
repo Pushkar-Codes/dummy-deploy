@@ -10,7 +10,7 @@ export default function About() {
     <div className="flex flex-col min-h-screen bg-[#212020]">
       <Navbar />
       {/* Section 1 here... */}
-      <div className="w-full min-h-[50vh] bg-white lg:px-40 lg:py-10">
+      <div className="w-full min-h-[40vh] bg-white lg:px-40 lg:py-10">
         <div className="w-full text-[#141213] text-xl font-semibold lg:text-4xl flex flex-col px-6 py-12">
           <div className="flex space-x-3">
             <svg
@@ -30,21 +30,35 @@ export default function About() {
 
           <div>
             <p className="text-xs mt-5 lg:text-2xl lg:py-8 font-normal text-justify">
-              SN Power & Infra, established in 2023, is a proprietorship
-              consultancy firm dedicated to delivering top-notch services in
-              Power Distribution, Civil, and other sectors.
+              SN Power & Infra is a consultancy firm dedicated to delivering
+              top-notch services in Power Distribution, Civil, and other
+              sectors. We pride ourselves on providing clients with the best
+              possible solutions in the most efficient manner.
             </p>
             <p className="text-xs mt-5 lg:text-2xl font-normal text-justify">
-              We pride ourselves on providing clients with the best possible
-              solutions in the most efficient manner. Our dynamic team works
-              collaboratively to achieve extraordinary results, tackling complex
-              projects with cost-effective, environmentally friendly approaches.
-              Leveraging innovative ideas, expert advice, and adherence to both
-              Indian and international standards, SN Power & Infra is committed
-              to excellence in every project.
+              Our dynamic team works collaboratively to achieve extraordinary
+              results, tackling complex projects with cost-effective,
+              environmentally friendly approaches. Leveraging innovative ideas,
+              expert advice, and adherence to both Indian and international
+              standards, SN Power & Infra is committed to excellence in every
+              project.
             </p>
           </div>
         </div>
+      </div>
+
+      <div className="text-white flex items-center justify-center py-6 shadow-[0_4px_20px_rgba(0,0,0,0.8)]">
+        <h1 className="font-semibold">Know More </h1>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="34px"
+          viewBox="0 -960 960 960"
+          width="44px"
+          fill="#facf0ecc"
+        >
+          <path d="M480-83 240-323l56-56 184 183 184-183 56 56L480-83Zm0-238L240-561l56-56 184 183 184-183 56 56-240 240Zm0-238L240-799l56-56 184 183 184-183 56 56-240 240Z" />
+        </svg>
       </div>
 
       {/* Section 2 here... */}

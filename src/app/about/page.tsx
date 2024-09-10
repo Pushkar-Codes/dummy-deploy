@@ -90,6 +90,8 @@ export default function About() {
               Government of India, Annual Reports, Technical Specifications of
               various govt. & non-govt. bodies, Research Papers, Case Studies
               and References of worldwide superstructures & mega projects etc.
+              <br />
+              <br />
               This data bank boosts the knowledge of our team that reflects in
               the project during execution resulting in affordable, reliable and
               high quality of work.
@@ -207,10 +209,11 @@ export default function About() {
           <hr className="w-[200px] ml-2 lg:w-[350px] border border-[#141213] mt-5 mb-3" />
           <div className="font-normal text-justify mt-5 text-xs lg:text-2xl">
             <p>
-              Mr. KN Mishra had founded SN Power & Infra in the year of 2023.
-              Before SN Power & Infra, Mr. Mishra had contributed his service
-              upto 35 years in ITI Limited; a Public Sector Unit of Government
-              of India.
+              Mr. KN Mishra established SN Power & Infra after an illustrious
+              35-year career at ITI Limited, a Public Sector Unit of the
+              Government of India. His vast experience and dedication have been
+              instrumental in shaping the vision and direction of SN Power &
+              Infra.
               <br />
               <br />
               He founded SN Power & Infra with the vision of providing the best

@@ -51,6 +51,10 @@
   border-radius: 8px;
 }
 
+.button3:hover {
+  box-shadow: 0 0 20px #facf0ecc;
+}
+
 @media (max-width: 768px) {
   .button2 {
     color: #212020;

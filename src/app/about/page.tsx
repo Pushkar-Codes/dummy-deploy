@@ -190,7 +190,7 @@ export default function About() {
       </div> */}
 
       {/* Section 5 here... */}
-      <div className="w-full min-h-auto border border-b-2 bg-white pb-10 lg:px-40 lg:py-10">
+      <div className="w-full min-h-auto bg-white pb-10 lg:px-40 lg:py-10">
         <div className="w-full text-[#141213] text-xl font-semibold lg:text-4xl flex flex-col px-6 py-8">
           <div className="flex space-x-3">
             <svg

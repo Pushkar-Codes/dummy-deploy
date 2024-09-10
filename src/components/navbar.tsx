@@ -109,7 +109,13 @@ export default function Navbar() {
             <FlipLink href="/contact">Contact</FlipLink>
           </div>
 
-          <button className="button1">
+          <button
+            className="button1"
+            onClick={() => {
+              toggleMenu();
+              window.open("/portfolio", "_blank");
+            }}
+          >
             Portfolio
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -152,7 +158,13 @@ export default function Navbar() {
         <Link href="/contact" onClick={toggleMenu}>
           Contact
         </Link>
-        <button className="button1" onClick={toggleMenu}>
+        <button
+          className="button1"
+          onClick={() => {
+            toggleMenu();
+            window.open("/portfolio", "_blank");
+          }}
+        >
           Portfolio
           <svg
             xmlns="http://www.w3.org/2000/svg"

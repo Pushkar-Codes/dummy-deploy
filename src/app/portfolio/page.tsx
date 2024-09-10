@@ -1,24 +1,38 @@
 "use client";
+import { useState, useEffect } from "react";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
-import Image from "next/image";
-import "../globals.css";
-import Link from "next/link";
 import SimpleImageSlider from "@/components/image-silder1";
 import SimpleImageSliders from "@/components/image-slider2";
+import Loader from "@/components/loader";
+import "../globals.css";
 
 export default function Portfolio() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1500); // Adjust the delay as needed
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return <Loader />;
+  }
+
   return (
     <div className="flex flex-col min-h-screen bg-[#212020]">
       <Navbar />
-      {/* Section 1 here... */}
-      <div className="bg-white">
-        <div className="px-4 py-4">
-          <div className="">
+      {/* Section 1 */}
+      <div className="lg:flex lg:px-24 lg:py-14 bg-white">
+        <div className="px-4 py-4 lg:w-[50%]">
+          <div>
             <SimpleImageSlider />
           </div>
           <div className="h-auto bg-[#e5bc05] shadow-[0_1px_10px_rgba(250,207,14,0.8)] px-3 py-4">
-            <h2 className="text-[#212020] text-2xl mt-3 ">
+            <h2 className="text-[#212020] text-2xl mt-3">
               Industry Leading Survey
             </h2>
             <p className="text-[#212020] mt-5">
@@ -28,28 +42,29 @@ export default function Portfolio() {
             </p>
           </div>
         </div>
-      </div>
-      {/* Section 2 here... */}
-      <div className="bg-white">
-        <div className="px-4 py-4">
-          <div className="">
-            <SimpleImageSliders />
-          </div>
-          <div className="h-auto bg-[#212020] shadow-[0_1px_10px_rgba(0,0,0,0.8)] px-3 py-4">
-            <h2 className="text-white text-2xl mt-3 ">
-              Detailed Analysis & Strategies
-            </h2>
-            <p className="text-white mt-5">
-              We provide comprehensive analysis and actionable strategies,
-              helping you make informed decisions that drive success in your
-              projects and initiatives.
-            </p>
+
+        <div className="bg-white lg:w-[50%]">
+          <div className="px-4 py-4">
+            <div>
+              <SimpleImageSliders />
+            </div>
+            <div className="h-auto bg-[#212020] shadow-[0_1px_10px_rgba(0,0,0,0.8)] px-3 py-4">
+              <h2 className="text-white text-2xl mt-3 ">
+                Detailed Analysis & Strategies
+              </h2>
+              <p className="text-white mt-5">
+                We provide comprehensive analysis and actionable strategies,
+                helping you make informed decisions that drive success in your
+                projects and initiatives.
+              </p>
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Section 3 here... */}
-      <div className="bg-white px-5 py-6">
+      {/* Rest of the sections here... */}
+      {/* Example: Section 3 */}
+      <div className="bg-white px-5 py-6 lg:px-72 lg:py-14">
         <h2 className="font-semibold">
           At SN Power & Infra, our actions speak louder than words, delivering
           results through innovative solutions, unmatched expertise, and a
@@ -81,7 +96,7 @@ export default function Portfolio() {
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
-            fill="rgba(33,32,32,1)"
+            fill="rgba(33,32,32,32,32,32,1)"
             width="20"
             height="20"
             className="ml-1"
@@ -93,7 +108,7 @@ export default function Portfolio() {
       </div>
 
       {/* Section 4 here... */}
-      <div className="w-full min-h-auto bg-[#141213] shadow-[0_4px_20px_rgba(0,0,0,0.8)] pb-10 lg:flex lg:justify-center items-center lg:flex-col lg:px-40 lg:py-10">
+      <div className="w-full min-h-auto bg-[#141213] shadow-[0_4px_20px_rgba(0,0,0,0.8)] pb-10 lg:flex lg:justify-center items-center lg:flex-col lg:px-40 lg:py-10 ">
         <div className="text-white text-xl font-semibold lg:text-4xl flex flex-col px-12 py-8 items-center">
           <h2>Project Status</h2>
           <hr className="w-[200px] mt-3 lg:w-[350px] border-0 h-[2px] bg-white" />
@@ -129,7 +144,7 @@ export default function Portfolio() {
       </div>
 
       {/* Section 5 here... */}
-      <div className="bg-slate-100 py-10">
+      <div className="bg-slate-100 py-10 lg:px-24 lg:py-24">
         <div className="px-5">
           <h2 className="text-xl font-semibold">Total Projects - 11:</h2>
           <p className="mt-3">

@@ -37,7 +37,7 @@ export default function Portfolio() {
           </div>
           <div className="h-auto bg-[#212020] px-3 py-4">
             <h2 className="text-white text-2xl mt-3 ">
-              Detailed Analysis & Strategy
+              Detailed Analysis & Strategies
             </h2>
             <p className="text-white mt-5">
               We provide comprehensive analysis and actionable strategies,

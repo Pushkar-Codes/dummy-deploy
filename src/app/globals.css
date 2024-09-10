@@ -28,7 +28,7 @@
 }
 
 .arraow-hover:hover {
-  box-shadow: 0 0 20px #facf0ecc;
+  box-shadow: 0 0 20px rgba(250, 207, 14, 0.8);
 }
 
 .button2 {
@@ -43,6 +43,12 @@
   display: flex;
   justify-content: center; /* Center the text horizontally */
   align-items: center; /* Center the text vertically */
+}
+
+.button3 {
+  border: 2px solid #facf0e;
+  padding: 10px 18px 14px;
+  border-radius: 8px;
 }
 
 @media (max-width: 768px) {

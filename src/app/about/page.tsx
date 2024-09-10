@@ -99,7 +99,7 @@ export default function About() {
       </div>
 
       {/* Section 3 here... */}
-      <div className="w-full min-h-auto border border-b-2 bg-[#141213] shadow-[0_4px_20px_rgba(0,0,0,0.8)] pb-10 lg:flex lg:justify-center items-center lg:flex-col lg:px-40 lg:py-10">
+      <div className="w-full min-h-auto bg-[#141213] shadow-[0_4px_20px_rgba(0,0,0,0.8)] pb-10 lg:flex lg:justify-center items-center lg:flex-col lg:px-40 lg:py-10">
         <div className="text-white text-xl font-semibold lg:text-4xl flex flex-col px-12 py-8 items-center">
           <h2>Project Status</h2>
           <hr className="w-[200px] mt-3 lg:w-[350px] border-0 h-[2px] bg-white" />

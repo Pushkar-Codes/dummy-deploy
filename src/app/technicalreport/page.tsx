@@ -6,8 +6,24 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import "../globals.css";
+import { useEffect, useState } from "react";
+import Loader from "@/components/loader";
 
 export default function TechnicalReport() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1500); // Adjust the delay as needed
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return <Loader />;
+  }
+
   return (
     <div className="flex flex-col min-h-screen bg-[#212020]">
       <Navbar />

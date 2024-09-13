@@ -2,8 +2,24 @@
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import "../globals.css";
+import { useEffect, useState } from "react";
+import Loader from "@/components/loader";
 
 export default function Contact() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1500); // Adjust the delay as needed
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return <Loader />;
+  }
+
   return (
     <div className="flex flex-col min-h-screen">
       <div>

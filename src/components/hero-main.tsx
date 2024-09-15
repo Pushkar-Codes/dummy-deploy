@@ -1,14 +1,24 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Navbar from "./navbar";
 import Image from "next/image";
-import ServiceCard from "./service-cards";
 import Footer from "./footer";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 
 export default function Heropage() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isPopupVisible, setIsPopupVisible] = useState(false);
+
+  // Show popup 1 second after page load
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsPopupVisible(true);
+    }, 1000); // 1 second delay
+
+    // Cleanup timer when component unmounts
+    return () => clearTimeout(timer);
+  }, []);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -28,6 +38,68 @@ export default function Heropage() {
           transition={{ delay: 0.5, duration: 0.8, ease: "easeOut" }}
         >
           <Navbar />
+
+          <div className="hero-page">
+            <AnimatePresence>
+              {isPopupVisible && (
+                <motion.div
+                  className="w-auto min-h-auto bg-[#141213] shadow-[0_4px_20px_rgba(0,0,0,0.8)] pb-10 lg:flex lg:justify-center items-center lg:flex-col lg:px-40 lg:py-10"
+                  initial={{ opacity: 0, scale: 0.5 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.5 }}
+                  transition={{ duration: 0.5, ease: "easeInOut" }}
+                >
+                  <div className="text-white text-xl font-semibold lg:text-4xl flex flex-col px-12 py-8 items-center">
+                    <h2>Project Status</h2>
+                    <hr className="w-[200px] mt-3 lg:w-[350px] border-0 h-[2px] bg-white" />
+                  </div>
+
+                  <div className="px-12 flex flex-col space-y-6 lg:items-center lg:flex-row lg:space-y-0 lg:space-x-8">
+                    <div
+                      className="w-[100%] h-[100px] bg-white rounded-md px-12 py-8 lg:w-[100%]"
+                      style={{
+                        boxShadow: "0 2px 10px rgba(255, 255, 255, 0.5)",
+                      }}
+                    >
+                      <p className="text-xl">
+                        <span className="text-orange-600">11</span> Total
+                        Projects
+                      </p>
+                    </div>
+
+                    <div
+                      className="w-[100%] h-[100px] bg-white rounded-md px-12 py-8 lg:w-[100%]"
+                      style={{
+                        boxShadow: "0 2px 10px rgba(255, 255, 255, 0.5)",
+                      }}
+                    >
+                      <p className="text-xl">
+                        <span className="text-orange-600">07</span> Completed
+                      </p>
+                    </div>
+
+                    <div
+                      className="w-[100%] h-[100px] bg-white rounded-md px-12 py-8 lg:w-[100%]"
+                      style={{
+                        boxShadow: "0 2px 10px rgba(255, 255, 255, 0.5)",
+                      }}
+                    >
+                      <p className="text-xl">
+                        <span className="text-orange-600">04</span> On-going
+                      </p>
+                    </div>
+                  </div>
+                  <button
+                    className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 mt-4"
+                    onClick={() => setIsPopupVisible(false)}
+                  >
+                    Close
+                  </button>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
+
           {/* Hero section starts from here ... */}
           <div className="lg:px-40 lg:py-10 px-2">
             <h1 className="text-white lg:text-8xl text-6xl leading-none mt-4">
@@ -36,6 +108,7 @@ export default function Heropage() {
               perfection.
             </h1>
           </div>
+
           {/* Hero page 1 button */}
           <div className="lg:h-12 lg:px-40 lg:flex lg:space-x-8 h-auto mt-12 px-2 w-full">
             <button className="button2">Work With Us</button>

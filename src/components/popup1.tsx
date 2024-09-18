@@ -57,12 +57,14 @@ export default function Popup() {
               </div>
             </div>
 
-            <button
-              className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 mt-4"
-              onClick={closePopup}
-            >
-              Close
-            </button>
+            <div className="flex justify-center item-centre">
+              <button
+                className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 mt-4"
+                onClick={closePopup}
+              >
+                Close
+              </button>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>

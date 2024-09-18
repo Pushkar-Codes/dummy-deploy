@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 
 const images: string[] = [
-  "/portfolio-images/port-image5.jpeg",
-  "/portfolio-images/port-image6.jpeg",
-  "/portfolio-images/port-image7.jpeg",
+  "/portfolio-images/port-image4.jpeg",
+  "/portfolio-images/port-image2.jpeg",
+  "/portfolio-images/port-image3.jpeg",
+  "/portfolio-images/port-image1.jpeg",
 ];
 
 const SimpleImageSliders: React.FC = () => {

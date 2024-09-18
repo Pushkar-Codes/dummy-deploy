@@ -2,6 +2,7 @@
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import "../globals.css";
+import ServiceCard from "@/components/service-cards";
 
 export default function About() {
   return (
@@ -10,22 +11,12 @@ export default function About() {
       {/* Section 1 here... */}
       <div className="w-full min-h-[40vh] bg-white lg:px-40 lg:py-10">
         <div className="w-full text-[#141213] text-xl font-semibold lg:text-4xl flex flex-col px-6 py-12">
-          <div className="flex space-x-3">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              fill="#facf0ecc"
-            >
-              <path
-                d="M120-160v-520l
-              160 120 200-280 200 160h160v520H120Zm200-120 160-220 280 218v-318H652L496-725 298-447l-98-73v144l120 96Z"
-              />
-            </svg>
+          <div className="flex space-x-3 justify-center">
             <h2> About Us</h2>
           </div>
-          <hr className="w-[200px] ml-2 lg:w-[350px] border border-[#141213] mt-5 mb-3" />
+          <div className="flex justify-center">
+            <hr className="w-[230px] mt-3 lg:w-[350px] border-0 h-[2px] bg-[#141213] shadow-[0_10px_20px_rgba(0,0,0,0.8)]" />
+          </div>
 
           <div>
             <p className="text-xs mt-5 lg:text-2xl lg:py-8 font-normal text-justify">
@@ -42,6 +33,66 @@ export default function About() {
               standards, SN Power & Infra is committed to excellence in every
               project.
             </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="w-full min-h-auto bg-white pb-10 lg:flex lg:justify-center items-center lg:flex-col lg:px-40 lg:py-10">
+        <div className="text-[#141213] text-xl font-semibold lg:text-4xl flex flex-col px-12 py-8 items-center">
+          <h2>Signature Aspect</h2>
+          <hr className="w-[230px] mt-3 lg:w-[350px] border-0 h-[2px] bg-[#141213] shadow-[0_10px_20px_rgba(0,0,0,0.8)]" />
+        </div>
+        <div className="flex flex-col space-y-10">
+          <div className="flex flex-col items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="40px"
+              viewBox="0 -960 960 960"
+              width="40px"
+              fill="#e5bc05"
+            >
+              <path d="M282.67-278h66.66v-203.33h-66.66V-278Zm328 0h66.66v-413.33h-66.66V-278Zm-164 0h66.66v-118.67h-66.66V-278Zm0-203.33h66.66V-548h-66.66v66.67ZM186.67-120q-27 0-46.84-19.83Q120-159.67 120-186.67v-586.66q0-27 19.83-46.84Q159.67-840 186.67-840h586.66q27 0 46.84 19.83Q840-800.33 840-773.33v586.66q0 27-19.83 46.84Q800.33-120 773.33-120H186.67Zm0-66.67h586.66v-586.66H186.67v586.66Zm0-586.66v586.66-586.66Z" />
+            </svg>
+            <p className="mt-1 text-[18px]">Data Insights</p>
+          </div>
+
+          <div className="flex flex-col items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="40px"
+              viewBox="0 -960 960 960"
+              width="40px"
+              fill="#e5bc05"
+            >
+              <path d="m622-288.67 48.67-48.66-155.34-156v-195.34h-66.66v222l173.33 178ZM480-80q-82.33 0-155.33-31.5-73-31.5-127.34-85.83Q143-251.67 111.5-324.67T80-480q0-82.33 31.5-155.33 31.5-73 85.83-127.34Q251.67-817 324.67-848.5T480-880q82.33 0 155.33 31.5 73 31.5 127.34 85.83Q817-708.33 848.5-635.33T880-480q0 82.33-31.5 155.33-31.5 73-85.83 127.34Q708.33-143 635.33-111.5T480-80Zm0-400Zm0 333.33q137.67 0 235.5-97.83 97.83-97.83 97.83-235.5 0-137.67-97.83-235.5-97.83-97.83-235.5-97.83-137.67 0-235.5 97.83-97.83 97.83-97.83 235.5 0 137.67 97.83 235.5 97.83 97.83 235.5 97.83Z" />
+            </svg>
+            <p className="mt-1 text-[18px]">On Time Report</p>
+          </div>
+
+          <div className="flex flex-col items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="40px"
+              viewBox="0 -960 960 960"
+              width="40px"
+              fill="#e5bc05"
+            >
+              <path d="M434.67-227.33 295.33-366l47.34-47.33 92 90.66 178.66-178.66 47.34 48-226 226ZM186.67-80q-27 0-46.84-19.83Q120-119.67 120-146.67v-600q0-27 19.83-46.83 19.84-19.83 46.84-19.83h56.66V-880h70v66.67h333.34V-880h70v66.67h56.66q27 0 46.84 19.83Q840-773.67 840-746.67v600q0 27-19.83 46.84Q800.33-80 773.33-80H186.67Zm0-66.67h586.66v-420H186.67v420Zm0-486.66h586.66v-113.34H186.67v113.34Zm0 0v-113.34 113.34Z" />
+            </svg>
+            <p className="mt-1 text-[18px]">Proper Planning</p>
+          </div>
+
+          <div className="flex flex-col items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="40px"
+              viewBox="0 -960 960 960"
+              width="40px"
+              fill="#e5bc05"
+            >
+              <path d="M480-260.67q66.67 0 122.17-36.5t80.5-98.16H277.33q25.67 61.66 80.84 98.16 55.16 36.5 121.83 36.5Zm-174.67-268 44.67-44 44 44 38-38-82-82.66-82.67 82.66 38 38Zm261.34 0 44-44 44.66 44 38-38-82.66-82.66-82 82.66 38 38ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 333.33q139.58 0 236.46-96.87 96.87-96.88 96.87-236.46t-96.87-236.46Q619.58-813.33 480-813.33t-236.46 96.87Q146.67-619.58 146.67-480t96.87 236.46q96.88 96.87 236.46 96.87Z" />
+            </svg>
+            <p className="mt-1 text-[18px]">Coustomer Satisfaction</p>
           </div>
         </div>
       </div>
@@ -64,24 +115,17 @@ export default function About() {
 
       {/* Section 2 here... */}
 
-      <div className="w-full min-h-[50vh] bg-white lg:px-40 lg:py-10">
+      <div className="w-full min-h-[50vh] bg-white lg:px-40 lg:py-10 lg:flex">
         <div className="w-full text-[#141213] text-xl font-semibold lg:text-4xl flex flex-col px-6 py-8">
-          <div className="flex space-x-3">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              fill="#facf0ecc"
-            >
-              <path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-80q-100 0-170-70t-70-170q0-100 70-170t170-70q100 0 170 70t70 170q0 100-70 170t-170 70Zm0-80q66 0 113-47t47-113q0-66-47-113t-113-47q-66 0-113 47t-47 113q0 66 47 113t113 47Zm0-80q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Z" />
-            </svg>
+          <div className="flex space-x-3 ">
             <h2> Our Mission</h2>
           </div>
-          <hr className="w-[200px] ml-2 lg:w-[350px] border border-[#141213] mt-5 mb-3" />
+          <div className="flex">
+            <hr className="w-[230px] mt-3 lg:w-[350px] border-0 h-[2px] bg-[#141213] shadow-[0_10px_20px_rgba(0,0,0,0.8)]" />
+          </div>
 
           <div>
-            <p className="text-xs mt-5 lg:text-2xl lg:py-8 font-normal text-justify">
+            <p className="text-xs mt-5 lg:text-2xl lg:py-8 font-normal flex ">
               SN Power & Infra has a data bank of more than 1000 Technical
               Documents such as IEC (International Electro-technical Commission)
               Specifications, IS (Indian Standard) Specifications, Reports of
@@ -90,13 +134,23 @@ export default function About() {
               Government of India, Annual Reports, Technical Specifications of
               various govt. & non-govt. bodies, Research Papers, Case Studies
               and References of worldwide superstructures & mega projects etc.
-              <br />
-              <br />
-              This data bank boosts the knowledge of our team that reflects in
-              the project during execution resulting in affordable, reliable and
-              high quality of work.
             </p>
           </div>
+        </div>
+
+        <div className="lg:flex lg:px-24 lg:py-18 mt-10 pb-10 flex items-center justify-center">
+          <ServiceCard
+            title="Our Field"
+            descriptions={[
+              "Electrical",
+              "Civil",
+              "Rain Water Harvesting",
+              "Technical Report",
+            ]}
+            linkText={""}
+            linkUrl={""} // linkText="Explore more"
+            // linkUrl="https://example.com"
+          />
         </div>
       </div>
 
@@ -194,19 +248,12 @@ export default function About() {
       {/* Section 5 here... */}
       <div className="w-full min-h-auto bg-white pb-10 lg:px-40 lg:py-10">
         <div className="w-full text-[#141213] text-xl font-semibold lg:text-4xl flex flex-col px-6 py-8">
-          <div className="flex space-x-3">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              fill="#facf0ecc"
-            >
-              <path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z" />
-            </svg>
+          <div className="flex space-x-3 justify-center">
             <h2> Meet the Founder</h2>
           </div>
-          <hr className="w-[200px] ml-2 lg:w-[350px] border border-[#141213] mt-5 mb-3" />
+          <div className="flex justify-center">
+            <hr className="w-[230px] mt-3 lg:w-[350px] border-0 h-[2px] bg-[#141213] shadow-[0_10px_20px_rgba(0,0,0,0.8)]" />
+          </div>
           <div className="font-normal text-justify mt-5 text-xs lg:text-2xl">
             <p>
               Mr. KN Mishra established SN Power & Infra after an illustrious

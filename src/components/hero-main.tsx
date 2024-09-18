@@ -89,12 +89,15 @@ export default function Heropage() {
                       </p>
                     </div>
                   </div>
-                  <button
-                    className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 mt-4"
-                    onClick={() => setIsPopupVisible(false)}
-                  >
-                    Close
-                  </button>
+
+                  <div className="flex justify-center">
+                    <button
+                      className="bg-orange-600 text-white px-4 py-2 rounded hover:bg-blue-600 mt-4"
+                      onClick={() => setIsPopupVisible(false)}
+                    >
+                      Close
+                    </button>
+                  </div>
                 </motion.div>
               )}
             </AnimatePresence>

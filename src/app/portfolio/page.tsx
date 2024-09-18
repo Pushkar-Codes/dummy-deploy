@@ -27,22 +27,6 @@ export default function Portfolio() {
       <Navbar />
       {/* Section 1 */}
       <div className="lg:flex lg:px-24 lg:py-14 bg-white">
-        <div className="px-4 py-4 lg:w-[50%]">
-          <div>
-            <SimpleImageSlider />
-          </div>
-          <div className="h-auto bg-[#e5bc05] shadow-[0_1px_10px_rgba(250,207,14,0.8)] px-3 py-4">
-            <h2 className="text-[#212020] text-2xl mt-3">
-              Industry Leading Survey
-            </h2>
-            <p className="text-[#212020] mt-5">
-              We are well-known for organizing surveys that set industry
-              standards. Our expertise spans across various sectors, ensuring
-              accurate assessments and data-driven insights.
-            </p>
-          </div>
-        </div>
-
         <div className="bg-white lg:w-[50%]">
           <div className="px-4 py-4">
             <div>
@@ -58,6 +42,22 @@ export default function Portfolio() {
                 projects and initiatives.
               </p>
             </div>
+          </div>
+        </div>
+
+        <div className="px-4 py-4 lg:w-[50%]">
+          <div>
+            <SimpleImageSlider />
+          </div>
+          <div className="h-auto bg-[#e5bc05] shadow-[0_1px_10px_rgba(250,207,14,0.8)] px-3 py-4">
+            <h2 className="text-[#212020] text-2xl mt-3">
+              Industry Leading Survey
+            </h2>
+            <p className="text-[#212020] mt-5">
+              We are well-known for organizing surveys that set industry
+              standards. Our expertise spans across various sectors, ensuring
+              accurate assessments and data-driven insights.
+            </p>
           </div>
         </div>
       </div>

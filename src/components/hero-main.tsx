@@ -43,61 +43,43 @@ export default function Heropage() {
             <AnimatePresence>
               {isPopupVisible && (
                 <motion.div
-                  className="w-auto min-h-auto bg-[#141213] shadow-[0_4px_20px_rgba(0,0,0,0.8)] pb-10 lg:flex lg:justify-center items-center lg:flex-col lg:px-40 lg:py-10"
+                  className="min-h-auto bg-white shadow-lg rounded-lg p-6 flex flex-col items-center"
                   initial={{ opacity: 0, scale: 0.5 }}
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.5 }}
                   transition={{ duration: 0.5, ease: "easeInOut" }}
                 >
-                  <div className="text-white text-xl font-semibold lg:text-4xl flex flex-col px-12 py-8 items-center">
-                    <h2>Project Status</h2>
-                    <hr className="w-[200px] mt-3 lg:w-[350px] border-0 h-[2px] bg-white" />
-                  </div>
+                  <h2 className="text-2xl text-black mb-4">Project Status</h2>
 
-                  <div className="px-12 flex flex-col space-y-6 lg:items-center lg:flex-row lg:space-y-0 lg:space-x-8">
-                    <div
-                      className="w-[100%] h-[100px] bg-white rounded-md px-12 py-8 lg:w-[100%]"
-                      style={{
-                        boxShadow: "0 2px 10px rgba(255, 255, 255, 0.5)",
-                      }}
-                    >
-                      <p className="text-xl">
-                        <span className="text-orange-600">11</span> Total
-                        Projects
+                  <hr className="w-[200px] ml-2 lg:w-[200px] border border-[#212020] " />
+
+                  <div className="flex flex-col space-y-4 mb-4">
+                    <div className="bg-white rounded-md p-4 shadow-sm">
+                      <p className="text-xl text-black">
+                        Total Projects{" "}
+                        <span className="text-yellow-400">11</span>
                       </p>
                     </div>
 
-                    <div
-                      className="w-[100%] h-[100px] bg-white rounded-md px-12 py-8 lg:w-[100%]"
-                      style={{
-                        boxShadow: "0 2px 10px rgba(255, 255, 255, 0.5)",
-                      }}
-                    >
-                      <p className="text-xl">
-                        <span className="text-orange-600">07</span> Completed
+                    <div className="bg-white rounded-md p-4 shadow-sm">
+                      <p className="text-xl text-black">
+                        Completed <span className="text-yellow-400">07</span>
                       </p>
                     </div>
 
-                    <div
-                      className="w-[100%] h-[100px] bg-white rounded-md px-12 py-8 lg:w-[100%]"
-                      style={{
-                        boxShadow: "0 2px 10px rgba(255, 255, 255, 0.5)",
-                      }}
-                    >
-                      <p className="text-xl">
-                        <span className="text-orange-600">04</span> On-going
+                    <div className="bg-white rounded-md p-4 shadow-sm">
+                      <p className="text-xl text-black">
+                        On-going <span className="text-yellow-400">04</span>
                       </p>
                     </div>
                   </div>
 
-                  <div className="flex justify-center">
-                    <button
-                      className="bg-orange-600 text-white px-4 py-2 rounded hover:bg-blue-600 mt-4"
-                      onClick={() => setIsPopupVisible(false)}
-                    >
-                      Close
-                    </button>
-                  </div>
+                  <button
+                    className="text-red-600 text-xl font-bold mt-auto transform transition-transform duration-300 hover:scale-110"
+                    onClick={() => setIsPopupVisible(false)}
+                  >
+                    X
+                  </button>
                 </motion.div>
               )}
             </AnimatePresence>
@@ -106,7 +88,7 @@ export default function Heropage() {
           {/* Hero section starts from here ... */}
           <div className="lg:px-40 lg:py-10 px-2">
             <h1 className="text-white lg:text-8xl text-6xl leading-none mt-4">
-              Welcome to SN Power <br /> & Infra, where <br /> passion lies in
+              Welcome to S N Power <br /> & Infra, where <br /> passion lies in
               <br />
               perfection.
             </h1>
@@ -114,7 +96,15 @@ export default function Heropage() {
 
           {/* Hero page 1 button */}
           <div className="lg:h-12 lg:px-40 lg:flex lg:space-x-8 h-auto mt-12 px-2 w-full">
-            <button className="button2">Work With Us</button>
+            <button
+              className="button2"
+              onClick={() => {
+                toggleMenu();
+                window.open("/contact", "_blank");
+              }}
+            >
+              Work With Us
+            </button>
             <div className="lg:flex space-x-6 items-center">
               <Image
                 className="lg:flex hidden"
@@ -137,7 +127,7 @@ export default function Heropage() {
           <div className="flex">
             <div className="px-8 py-12 w-[50%] lg:px-24 lg:py-24">
               <div className="text-[#141213] text-xs font-semibold lg:text-4xl">
-                SN Power & Infra was founded to deliver expert consultancy,
+                S N Power & Infra was founded to deliver expert consultancy,
                 offering services in Power Distribution, Civil, and other
                 sectors, ensuring industry-specific, top-notch solutions.
               </div>
@@ -156,7 +146,7 @@ export default function Heropage() {
                 transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
                 className="text-xs mt-5 lg:text-2xl"
               >
-                SN Power & Infra has quickly established itself as a trusted
+                S N Power & Infra has quickly established itself as a trusted
                 name in the industry.
               </motion.p>
             </div>
@@ -228,7 +218,7 @@ export default function Heropage() {
             transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
             className="text-white text-xl px-2 py-12 text-justify lg:text-3xl "
           >
-            At S. N. Power & Infra, our vision is to harness the power of
+            At S N Power & Infra, our vision is to harness the power of
             collaboration to achieve results that surpass individual
             capabilities. By working as a unified team, we strive to push the
             boundaries of innovation and deliver extraordinary outcomes for our

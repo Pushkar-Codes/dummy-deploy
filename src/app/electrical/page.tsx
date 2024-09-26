@@ -44,7 +44,7 @@ export default function Electrical() {
         >
           <div className="relative">
             <p className="absolute text-white text-4xl font-semibold lg:text-7xl lg:top-[-20px] lg:px-24">
-              Electrical Services We Offer At SN Power & Infra
+              Electrical Services We Offer At S N Power & Infra
             </p>
           </div>
           <div className="mt-32 lg:mt-40">
@@ -60,7 +60,7 @@ export default function Electrical() {
 
         <div className="py-10 bg-white px-2 text-[#141213] text-justify lg:text-2xl lg:flex lg:justify-center lg:items-center lg:px-24 lg:py-24">
           <p>
-            The electrical services offered at SN Power & Infra are tailored to
+            The electrical services offered at S N Power & Infra are tailored to
             meet diverse needs, from residential to industrial projects. Our
             expert team ensures top-notch quality, safety, and efficiency in
             every task, utilizing advanced technology and best practices to
@@ -68,8 +68,8 @@ export default function Electrical() {
             test of time.
             <br />
             <br />
-            At SN Power & Infra, we prioritize customer satisfaction by offering
-            comprehensive electrical services that cover installation,
+            At S N Power & Infra, we prioritize customer satisfaction by
+            offering comprehensive electrical services that cover installation,
             maintenance, and emergency support.
             <br />
             <br />

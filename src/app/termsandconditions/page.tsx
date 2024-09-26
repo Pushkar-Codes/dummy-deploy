@@ -18,8 +18,8 @@ export default function TermsCondition() {
           <div className="mb-8">
             <h3 className="text-xl font-semibold mb-2">1. Introduction</h3>
             <p>
-              Welcome to SN Power &amp; Infra. These Terms and Conditions
-              outline the rules and regulations for the use of SN Power &amp;
+              Welcome to N Power &amp; Infra. These Terms and Conditions outline
+              the rules and regulations for the use of SN Power &amp;
               Infra&apos;s website and services. By accessing or using our
               website and services, you agree to comply with and be bound by
               these terms. If you do not agree with any part of these terms, you
@@ -30,8 +30,8 @@ export default function TermsCondition() {
           <div className="mb-8">
             <h3 className="text-xl font-semibold mb-2">2. Services Provided</h3>
             <p>
-              SN Power &amp; Infra provides consultancy services in the areas of
-              Power Distribution, Civil Infrastructure, and Rain Water
+              S N Power &amp; Infra provides consultancy services in the areas
+              of Power Distribution, Civil Infrastructure, and Rain Water
               Harvesting. We strive to deliver the best solutions in an
               efficient and effective manner.
             </p>
@@ -56,8 +56,8 @@ export default function TermsCondition() {
             </h3>
             <p>
               All content on our website, including but not limited to text,
-              graphics, logos, images, and software, is the property of SN Power
-              &amp; Infra or its content suppliers and is protected by
+              graphics, logos, images, and software, is the property of S N
+              Power &amp; Infra or its content suppliers and is protected by
               intellectual property laws. Unauthorized use of this content is
               prohibited.
             </p>
@@ -68,7 +68,7 @@ export default function TermsCondition() {
               5. Limitation of Liability
             </h3>
             <p>
-              SN Power &amp; Infra shall not be liable for any indirect,
+              S N Power &amp; Infra shall not be liable for any indirect,
               incidental, special, or consequential damages, or any loss of data
               or profits, arising out of or in connection with your use of our
               website or services. Our liability is limited to the maximum
@@ -90,7 +90,7 @@ export default function TermsCondition() {
             <h3 className="text-xl font-semibold mb-2">7. Governing Law</h3>
             <p>
               These Terms and Conditions shall be governed by and construed in
-              accordance with the laws of the jurisdiction in which SN Power
+              accordance with the laws of the jurisdiction in which S N Power
               &amp; Infra is established. Any disputes arising from these terms
               will be resolved in the courts of that jurisdiction.
             </p>

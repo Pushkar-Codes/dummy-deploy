@@ -60,7 +60,7 @@ export default function Civil() {
 
         <div className="py-10 bg-white px-2 text-[#141213] text-justify lg:text-2xl lg:flex lg:justify-center lg:items-center lg:px-24 lg:py-24">
           <p>
-            The civil services offered at SN Power & Infra are tailored to meet
+            The civil services offered at S N Power & Infra are tailored to meet
             diverse needs, from residential to industrial projects. Our expert
             team ensures top-notch quality, safety, and efficiency in every
             task, utilizing advanced technology and best practices to deliver
@@ -68,9 +68,9 @@ export default function Civil() {
             time.
             <br />
             <br />
-            At SN Power & Infra, we prioritize customer satisfaction by offering
-            comprehensive civil services that cover construction, maintenance,
-            and project management.
+            At S N Power & Infra, we prioritize customer satisfaction by
+            offering comprehensive civil services that cover construction,
+            maintenance, and project management.
             <br />
             <br />
             Our commitment to excellence, combined with our extensive industry

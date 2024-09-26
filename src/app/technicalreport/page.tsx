@@ -60,7 +60,7 @@ export default function TechnicalReport() {
 
         <div className="py-10 bg-white px-2 text-[#141213] text-justify lg:text-2xl lg:flex lg:justify-center lg:items-center lg:px-24 lg:py-24">
           <p>
-            The technical report services offered at SN Power & Infra are
+            The technical report services offered at S N Power & Infra are
             tailored to meet diverse needs, from residential to industrial
             projects. Our expert team ensures top-notch quality, accuracy, and
             clarity in every report, utilizing advanced technology and best
@@ -68,8 +68,8 @@ export default function TechnicalReport() {
             and stand the test of time.
             <br />
             <br />
-            At SN Power & Infra, we prioritize customer satisfaction by offering
-            comprehensive technical report services that cover detailed
+            At S N Power & Infra, we prioritize customer satisfaction by
+            offering comprehensive technical report services that cover detailed
             analysis, feasibility studies, and project documentation.
             <br />
             <br />

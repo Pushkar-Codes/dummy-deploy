@@ -176,7 +176,7 @@ export default function Career() {
 
         <div className="">
           <a
-            href="mailto:hr@snpowerinfra.com?subject=Resume%20Submission"
+            href="mailto: snpowerinfrainfo@gmail.com?subject=Resume%20Submission"
             target="_blank"
             rel="noopener noreferrer"
           >

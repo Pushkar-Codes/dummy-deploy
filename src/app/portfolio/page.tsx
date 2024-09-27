@@ -66,7 +66,7 @@ export default function Portfolio() {
       {/* Example: Section 3 */}
       <div className="bg-white px-5 py-6 lg:px-72 lg:py-14">
         <h2 className="font-semibold">
-          At SN Power & Infra, our actions speak louder than words, delivering
+          At S N Power & Infra, our actions speak louder than words, delivering
           results through innovative solutions, unmatched expertise, and a
           commitment to excellence in every project we undertake.
         </h2>
@@ -148,7 +148,7 @@ export default function Portfolio() {
         <div className="px-5">
           <h2 className="text-xl font-semibold">Total Projects - 11:</h2>
           <p className="mt-3">
-            SN Power & Infra has successfully initiated a total of 11 diverse
+            S N Power & Infra has successfully initiated a total of 11 diverse
             projects, demonstrating our wide-ranging expertise across various
             domains. Each project reflects our commitment to delivering
             excellence in infrastructure and consultancy services.
@@ -158,7 +158,7 @@ export default function Portfolio() {
         <div className="px-5 py-4">
           <h2 className="text-xl font-semibold">Completed Projects - 07:</h2>
           <p className="mt-3">
-            With 7 projects successfully completed, SN Power & Infra has
+            With 7 projects successfully completed, S N Power & Infra has
             consistently met and exceeded client expectations. These completed
             projects stand as a testament to our ability to deliver on time,
             within budget, and with outstanding quality.
@@ -168,7 +168,7 @@ export default function Portfolio() {
         <div className="px-5 py-4">
           <h2 className="text-xl font-semibold">Ongoing Projects - 04:</h2>
           <p className="mt-3">
-            Currently, SN Power & Infra is actively working on 4 ongoing
+            Currently, S N Power & Infra is actively working on 4 ongoing
             projects, driving forward with precision and dedication. These
             projects are in various stages of development, each poised to
             contribute significantly to our portfolio of successful ventures.

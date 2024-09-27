@@ -19,11 +19,11 @@ export default function PrivacyPolicy() {
             <div className="mb-8">
               <h2 className="text-xl font-semibold mb-2">1. Introduction</h2>
               <p>
-                Welcome to SN Power & Infra. We are committed to protecting your
-                privacy and ensuring that your personal information is handled
-                in a safe and responsible manner. This Privacy Policy outlines
-                how we collect, use, and protect your data when you interact
-                with our website and services.
+                Welcome to S N Power & Infra. We are committed to protecting
+                your privacy and ensuring that your personal information is
+                handled in a safe and responsible manner. This Privacy Policy
+                outlines how we collect, use, and protect your data when you
+                interact with our website and services.
               </p>
             </div>
 
@@ -32,7 +32,7 @@ export default function PrivacyPolicy() {
                 2. Company Overview
               </h2>
               <p>
-                SN Power & Infra, established in 2023, is a proprietorship
+                S N Power & Infra, established in 2023, is a proprietorship
                 consultancy firm specializing in Power Distribution, Civil, and
                 other sectors. Our mission is to provide top-notch,
                 cost-effective, and environmentally friendly solutions to our
@@ -43,7 +43,7 @@ export default function PrivacyPolicy() {
             <div className="mb-8">
               <h2 className="text-xl font-semibold mb-2">3. Data Collection</h2>
               <p>
-                Currently, SN Power & Infra does not collect any personal data
+                Currently, S N Power & Infra does not collect any personal data
                 from users. We do not use cookies or any other tracking
                 mechanisms on our website at this time. However, we may
                 implement cookies or other data collection methods in the future
@@ -66,7 +66,7 @@ export default function PrivacyPolicy() {
             <div className="mb-8">
               <h2 className="text-xl font-semibold mb-2">5. Data Sharing</h2>
               <p>
-                SN Power & Infra does not share, sell, or disclose any personal
+                S N Power & Infra does not share, sell, or disclose any personal
                 information to third parties. Should data collection practices
                 change, we will provide clear information about any data sharing
                 practices, including who we may share your information with and
@@ -99,10 +99,10 @@ export default function PrivacyPolicy() {
             <div className="mb-8">
               <h2 className="text-xl font-semibold mb-2">8. Cookies</h2>
               <p>
-                Currently, SN Power & Infra does not use cookies on our website.
-                In the future, if cookies are used, this section will be updated
-                to explain how cookies work, what types of cookies we use, and
-                how users can manage cookie settings.
+                Currently, S N Power & Infra does not use cookies on our
+                website. In the future, if cookies are used, this section will
+                be updated to explain how cookies work, what types of cookies we
+                use, and how users can manage cookie settings.
               </p>
             </div>
 
@@ -123,12 +123,12 @@ export default function PrivacyPolicy() {
               <h2 className="text-xl font-semibold mb-2">10. Contact Us</h2>
               <p>
                 If you have any questions or concerns about this Privacy Policy
-                or SN Power & Infra’s practices, please contact us at:
+                or S N Power & Infra’s practices, please contact us at:
               </p>
               <br />
               <br />
               <p>
-                <strong>SN Power & Infra</strong>
+                <strong>S N Power & Infra</strong>
                 <br />
                 <br />
                 Phone: +91 9555494092

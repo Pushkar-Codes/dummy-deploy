@@ -44,7 +44,7 @@ export default function Rain() {
         >
           <div className="relative">
             <p className="absolute text-white text-4xl font-semibold lg:text-7xl lg:top-[-20px] lg:px-24">
-              Rain Water Harvesting At SN Power & Infra
+              Rain Water Harvesting At S N Power & Infra
             </p>
           </div>
           <div className="mt-32 lg:mt-40">
@@ -59,7 +59,7 @@ export default function Rain() {
 
         <div className="py-10 bg-white px-2 text-[#141213] text-justify lg:text-2xl lg:flex lg:justify-center lg:items-center lg:px-24 lg:py-24">
           <p>
-            The rainwater harvesting services offered at SN Power & Infra are
+            The rainwater harvesting services offered at S N Power & Infra are
             tailored to meet diverse needs, from residential to industrial
             projects. Our expert team ensures top-notch quality, safety, and
             efficiency in every task, utilizing advanced technology and best
@@ -67,9 +67,9 @@ export default function Rain() {
             stand the test of time.
             <br />
             <br />
-            At SN Power & Infra, we prioritize customer satisfaction by offering
-            comprehensive rainwater harvesting services that cover system
-            design, feasibility studies, and implementation.
+            At S N Power & Infra, we prioritize customer satisfaction by
+            offering comprehensive rainwater harvesting services that cover
+            system design, feasibility studies, and implementation.
             <br />
             <br />
             Our commitment to excellence, combined with our extensive industry

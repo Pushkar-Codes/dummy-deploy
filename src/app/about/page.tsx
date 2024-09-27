@@ -20,7 +20,7 @@ export default function About() {
 
           <div>
             <p className="text-xs mt-5 lg:text-2xl lg:py-8 font-normal text-justify">
-              SN Power & Infra is a consultancy firm dedicated to delivering
+              S N Power & Infra is a consultancy firm dedicated to delivering
               top-notch services in Power Distribution, Civil, and other
               sectors. We pride ourselves on providing clients with the best
               possible solutions in the most efficient manner.
@@ -30,7 +30,7 @@ export default function About() {
               results, tackling complex projects with cost-effective,
               environmentally friendly approaches. Leveraging innovative ideas,
               expert advice, and adherence to both Indian and international
-              standards, SN Power & Infra is committed to excellence in every
+              standards, S N Power & Infra is committed to excellence in every
               project.
             </p>
           </div>
@@ -126,7 +126,7 @@ export default function About() {
 
           <div>
             <p className="text-xs mt-5 lg:text-2xl lg:py-8 font-normal flex ">
-              SN Power & Infra has a data bank of more than 1000 Technical
+              S N Power & Infra has a data bank of more than 1000 Technical
               Documents such as IEC (International Electro-technical Commission)
               Specifications, IS (Indian Standard) Specifications, Reports of
               Central Board of Irrigation and Power (CBIP), Reports of CEA
@@ -256,14 +256,14 @@ export default function About() {
           </div>
           <div className="font-normal text-justify mt-5 text-xs lg:text-2xl">
             <p>
-              Mr. KN Mishra established SN Power & Infra after an illustrious
+              Mr. K N Mishra established S N Power & Infra after an illustrious
               35-year career at ITI Limited, a Public Sector Unit of the
               Government of India. His vast experience and dedication have been
               instrumental in shaping the vision and direction of SN Power &
               Infra.
               <br />
               <br />
-              He founded SN Power & Infra with the vision of providing the best
+              He founded S N Power & Infra with the vision of providing the best
               possible solution to the client in the easiest way as possible to
               contribute more and more in the sector of consultancy services.
             </p>

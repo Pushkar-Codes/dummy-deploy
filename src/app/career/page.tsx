@@ -25,7 +25,6 @@ export default function Career() {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
-
       {/* Section 1 */}
       <div className="relative bg-red-300 flex-1">
         <div className="relative w-full h-[600px] lg:h-[600px]">
@@ -57,7 +56,6 @@ export default function Career() {
           </div>
         </div>
       </div>
-
       {/* Section 2 */}
       <div className="px-2 w-full max-h-auto">
         <div>
@@ -108,7 +106,6 @@ export default function Career() {
           </Link>
         </div>
       </div>
-
       {/* Section 3 */}
       <div className="lg:flex lg:px-24 ">
         <div className="px-2">
@@ -150,7 +147,6 @@ export default function Career() {
           </div>
         </div>
       </div>
-
       <div className="lg:px-24">
         <div className="">
           <Link
@@ -197,6 +193,201 @@ export default function Career() {
         </div>
       </div>
 
+      <div className="px-2 py-14 w-full h-auto ">
+        <div>
+          <h2 className="text-xl mb-8 font-semibold">Serivces We Offer: </h2>
+        </div>
+
+        <div className="px-2 space-y-6">
+          {/* Electrical card */}
+          <div
+            className="w-full h-28 border flex lg:px-24 lg:h-48"
+            style={{
+              transition: "transform 0.3s ease-out, box-shadow 0.3s ease-out",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = "scale(1.05)";
+              e.currentTarget.style.boxShadow =
+                "0 12px 15px rgba(0, 0, 0, 0.3)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = "scale(1)";
+              e.currentTarget.style.boxShadow = "none";
+            }}
+          >
+            <div className="w-[40%] h-full">
+              <Image
+                className="ml-auto h-full lg:w-full lg:ml-0 lg:max-h-screen"
+                src="/main-images/electric-small.png"
+                alt="services"
+                width={280}
+                height={20}
+              />
+            </div>
+            <div
+              className="bg-slate-100 w-full flex justify-between items-center px-5"
+              style={{ boxShadow: "0 8px 10px rgba(0, 0, 0, 0.25)" }}
+            >
+              <h2 className="text-xl text-[#141213] lg:text-3xl">Electrical</h2>
+              <div>
+                <Link className="arraow-hover" href="/electrical">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="rgba(250,207,14,0.8)"
+                    height={50}
+                    width={30}
+                  >
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                    <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                  </svg>
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          {/* Civil card */}
+          <div
+            className="w-full h-28 border flex lg:px-24 lg:h-48"
+            style={{
+              transition: "transform 0.3s ease-out, box-shadow 0.3s ease-out",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = "scale(1.05)";
+              e.currentTarget.style.boxShadow =
+                "0 12px 15px rgba(0, 0, 0, 0.3)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = "scale(1)";
+              e.currentTarget.style.boxShadow = "none";
+            }}
+          >
+            <div className="w-[40%] h-full">
+              <Image
+                className="ml-auto h-full lg:w-full lg:ml-0 lg:max-h-screen"
+                src="/main-images/civil-small.png"
+                alt="services"
+                width={280}
+                height={20}
+              />
+            </div>
+            <div
+              className="bg-slate-100 w-full flex justify-between items-center px-5"
+              style={{ boxShadow: "0 8px 10px rgba(0, 0, 0, 0.25)" }}
+            >
+              <h2 className="text-xl text-[#141213] lg:text-3xl">Civil</h2>
+              <div>
+                <Link className="arraow-hover" href="/civil">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="rgba(250,207,14,0.8)"
+                    height={50}
+                    width={30}
+                  >
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                    <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                  </svg>
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          {/* Rain water card */}
+          <div
+            className="w-full h-28 border flex lg:px-24 lg:h-48"
+            style={{
+              transition: "transform 0.3s ease-out, box-shadow 0.3s ease-out",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = "scale(1.05)";
+              e.currentTarget.style.boxShadow =
+                "0 12px 15px rgba(0, 0, 0, 0.3)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = "scale(1)";
+              e.currentTarget.style.boxShadow = "none";
+            }}
+          >
+            <div className="w-[40%] h-full">
+              <Image
+                className="ml-auto h-full lg:w-full lg:ml-0 lg:max-h-screen"
+                src="/main-images/rain-small.png"
+                alt="services"
+                width={280}
+                height={20}
+              />
+            </div>
+            <div
+              className="bg-slate-100 w-full flex justify-between items-center px-5"
+              style={{ boxShadow: "0 8px 10px rgba(0, 0, 0, 0.25)" }}
+            >
+              <h2 className="text-xl text-[#141213] lg:text-3xl">
+                Rain Water Harvesting
+              </h2>
+              <Link className="arraow-hover" href="/rainwater">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="rgba(250,207,14,0.8)"
+                  height={50}
+                  width={30}
+                >
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                </svg>
+              </Link>
+            </div>
+          </div>
+
+          {/* Technical report card */}
+          <div
+            className="w-full h-28 border flex lg:px-24 lg:h-48"
+            style={{
+              transition: "transform 0.3s ease-out, box-shadow 0.3s ease-out",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = "scale(1.05)";
+              e.currentTarget.style.boxShadow =
+                "0 12px 15px rgba(0, 0, 0, 0.3)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = "scale(1)";
+              e.currentTarget.style.boxShadow = "none";
+            }}
+          >
+            <div className="w-[40%] h-full">
+              <Image
+                className="ml-auto h-full lg:w-full lg:ml-0 lg:max-h-screen"
+                src="/main-images/report-small.png"
+                alt="services"
+                width={280}
+                height={20}
+              />
+            </div>
+            <div
+              className="bg-slate-100 w-full flex justify-between items-center px-5"
+              style={{ boxShadow: "0 8px 10px rgba(0, 0, 0, 0.25)" }}
+            >
+              <h2 className="text-xl text-[#141213] lg:text-3xl">
+                Technical Report
+              </h2>
+              <Link className="arraow-hover" href="/technicalreport">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="rgba(250,207,14,0.8)"
+                  height={50}
+                  width={30}
+                >
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                </svg>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
       {/* Footer Section */}
       <Footer />
     </div>
